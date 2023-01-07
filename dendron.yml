@@ -91,7 +91,7 @@ publishing:
     writeStubs: false
     siteRootDir: docs
     seo:
-        title: Dendron
+        title: My Dendron Notes
         description: Personal Knowledge Space
     github:
         enableEditLink: true
@@ -107,4 +107,5 @@ publishing:
     searchMode: search
     assetsPrefix: /Notes
     siteUrl: https://greguus.github.io
+    enableHierarchyDisplay: false
     

@@ -1,8 +1,8 @@
 ---
 id: dkhaxs77zw01c445jl4oetr
-title: Welcome
+title: My Dendron Notes
 desc: ''
-updated: 1673087047854
+updated: 1673089963561
 created: 1673083387776
 ---
 # Welcome to my Dendron Notes:
