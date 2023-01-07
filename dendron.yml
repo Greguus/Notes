@@ -105,6 +105,6 @@ publishing:
     enableTaskNotes: true
     enablePrettyLinks: true
     searchMode: search
-    assetsPrefix: /notes
+    assetsPrefix: /Notes
     siteUrl: https://greguus.github.io
     
