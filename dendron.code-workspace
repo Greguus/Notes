@@ -16,7 +16,14 @@
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.suggest.showSnippets": true,
     "editor.tabCompletion": "on",
-    "dendron.enableSelfContainedVaultWorkspace": true
+    "dendron.enableSelfContainedVaultWorkspace": true,
+    "cSpell.language": "en,en-US,en-GB",
+    "cSpell.words": [
+      "ipmitool"
+    ],
+    "cSpell.ignoreWords": [
+      "hotcorecpu"
+    ]
   },
   "extensions": {
     "recommendations": [
