@@ -2,9 +2,11 @@
 id: qjohlc5mtovwgwiqfzdgwea
 title: Dell Server Fan Tamer
 desc: ''
-updated: 1673142051391
+updated: 1673143319597
 created: 1673137361927
 ---
+
+## Dell Server Fan Tamer
 
 Copy the code below and modify to your content. Comments inside the script explain how to use this script and what tools are required.
 I have used this script on __Dell R710__ (an oldie I know) with a great success. 
@@ -64,5 +66,5 @@ I have adapted it to __Dell R210__ also but those servers have minimum fan speed
 >	
 >	#Enjoy silent server!
 
-Download:
+## Download:
 [fancontrol.sh](https://github.com/Greguus/Notes/blob/main/fancontrol.sh)
