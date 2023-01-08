@@ -2,9 +2,8 @@
 id: dkhaxs77zw01c445jl4oetr
 title: My Dendron Notes
 desc: ''
-updated: 1673138078263
+updated: 1673141916751
 created: 1673083387776
-nav_exclude_children: true
 ---
 # Welcome to my Dendron Notes:
 
