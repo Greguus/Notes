@@ -107,5 +107,5 @@ publishing:
     searchMode: search
     assetsPrefix: /Notes
     siteUrl: https://greguus.github.io/Notes
-  #  enableHierarchyDisplay: true
+    enableHierarchyDisplay: true
     
