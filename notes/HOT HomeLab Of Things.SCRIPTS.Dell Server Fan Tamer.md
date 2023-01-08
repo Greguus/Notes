@@ -2,7 +2,7 @@
 id: qjohlc5mtovwgwiqfzdgwea
 title: Dell Server Fan Tamer
 desc: ''
-updated: 1673141563618
+updated: 1673142051391
 created: 1673137361927
 ---
 
@@ -65,4 +65,4 @@ I have adapted it to __Dell R210__ also but those servers have minimum fan speed
 >	#Enjoy silent server!
 
 Download:
-[fancontrol.sh](https://github.com/Greguus/Notes/fancontrol.sh)
+[fancontrol.sh](https://github.com/Greguus/Notes/blob/main/fancontrol.sh)
