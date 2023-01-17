@@ -2,7 +2,7 @@
 id: mybr5q8teq3cgw5295vo8le
 title: Controlled_Node_Setup
 desc: ''
-updated: 1673951802899
+updated: 1673952189637
 created: 1673951621086
 ---
 
@@ -33,7 +33,7 @@ Temporary draft (work in progress):
       ansible.builtin.file:
         path: /root/.ssh/authorized_keys
         state: absent
-    - name: Set ssh key too from file
+    - name: Set ssh key from file
       authorized_key:
         user: ansible
         state: present
