@@ -2,7 +2,7 @@
 id: mybr5q8teq3cgw5295vo8le
 title: Controlled_Node_Setup
 desc: ''
-updated: 1673952189637
+updated: 1675600464838
 created: 1673951621086
 ---
 
