@@ -2,7 +2,7 @@
 id: ll31x7410bamam5vfds1u2g
 title: Bug Bounty TOOLBOX
 desc: ''
-updated: 1677061035748
+updated: 1677065827245
 created: 1677055431183
 ---
 ## TOOLS:
@@ -92,3 +92,8 @@ https://sqlmap.org/
 It performs “black-box” scans, i.e. it does not study the source code of the application but will scan the <br>web pages of the deployed web applications, looking for scripts and forms where it can inject data. <br>Once it gets this list, Wapiti acts like a fuzzer, injecting payloads to see if a script is vulnerable.<br>
 https://www.kali.org/tools/wapiti/
 
+### **Sniper**
+>Sn1per is an automated scanner that can automate the process of collecting data for exploration and penetration testing.<br>
+>
+>In their work sn1per involves such well-known tools like: amap, arachni, amap, cisco-torch, dnsenum, enum4linux, golismero, hydra, metasploit-framework, nbtscan, nmap smtp-user-enum, sqlmap, sslscan, theharvester, w3af, wapiti, whatweb, whois, nikto, wpscan.d during a penetration test to enumerate and scan for vulnerabilities.<br>
+https://github.com/1N3/Sn1per
