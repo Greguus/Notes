@@ -2,7 +2,7 @@
 id: ll31x7410bamam5vfds1u2g
 title: Bug Bounty TOOLBOX
 desc: ''
-updated: 1677060180790
+updated: 1677061035748
 created: 1677055431183
 ---
 ## TOOLS:
@@ -80,11 +80,11 @@ https://scrapy.org/
 ### **What CMS**
 > A Content Management System, or CMS, is a piece of software designed to help users create and edit websites. <br>
 CMS functionality varies widely and can include much more than the basic features for managing text and image content. <br>
-Some of the most popular systems help users design, track users, handle searches, collect visitor comments, host forums and much much more.
+Some of the most popular systems help users design, track users, handle searches, collect visitor comments, host forums and much much more.<br>
 https://whatcms.org/
 
 ### **sqlmap**
-> sqlmap is an open source penetration testing tool that automates the process of detecting and exploiting SQL injection flaws and taking over of database servers.
+> sqlmap is an open source penetration testing tool that automates the process of detecting and exploiting SQL injection flaws and taking over of database servers.<br>
 https://sqlmap.org/
 
 ### **Wapiti**
