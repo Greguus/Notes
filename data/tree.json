@@ -1,0 +1,185 @@
+{
+  "roots": [
+    {
+      "key": "t7zelcb6b17opo2gjy4y9cq",
+      "title": "Cheat Sheets:",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "Cybersecurity_Notes",
+      "children": [
+        {
+          "key": "ll31x7410bamam5vfds1u2g",
+          "title": "Bug Bounty TOOLBOX",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Cybersecurity_Notes",
+          "children": []
+        },
+        {
+          "key": "9mtvb3bi0ewh6uhzashbs0v",
+          "title": "Checklist Linux",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Cybersecurity_Notes",
+          "children": []
+        },
+        {
+          "key": "payc36k9g5adgt5wyinqr8g",
+          "title": "Checklist Windows",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Cybersecurity_Notes",
+          "children": []
+        },
+        {
+          "key": "3o48nuz7byeshb4lhbfpang",
+          "title": "PEN_cheatsheet",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Cybersecurity_Notes",
+          "children": [
+            {
+              "key": "4it4kktpaqbu2raq4bk5oub",
+              "title": "Nmap",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "Cybersecurity_Notes",
+              "children": []
+            }
+          ]
+        },
+        {
+          "key": "phd6lr0llsyy9qcbykd4b25",
+          "title": "Pentest opening",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Cybersecurity_Notes",
+          "children": []
+        },
+        {
+          "key": "ecm8gbfd442dpxbe5fggfzo",
+          "title": "SQL_Injection",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Cybersecurity_Notes",
+          "children": []
+        }
+      ]
+    },
+    {
+      "key": "h42642wolzf824la84a6bb7",
+      "title": "HOT HomeLab Of Things:",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "Cybersecurity_Notes",
+      "children": [
+        {
+          "key": "om8an351xireaxm8fnh4lcl",
+          "title": "ANSIBLE",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Cybersecurity_Notes",
+          "children": [
+            {
+              "key": "mybr5q8teq3cgw5295vo8le",
+              "title": "Controlled_Node_Setup",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "Cybersecurity_Notes",
+              "children": []
+            }
+          ]
+        },
+        {
+          "key": "oiuemyum5qeirf6iyu4piq3",
+          "title": "POWERSHELL",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Cybersecurity_Notes",
+          "children": [
+            {
+              "key": "7z8bjqbo56addky8v1sk2rd",
+              "title": "Useful Commands",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "Cybersecurity_Notes",
+              "children": []
+            }
+          ]
+        },
+        {
+          "key": "kh3qu6gbkqp3jojuo9qgkzl",
+          "title": "SCRIPTS:",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Cybersecurity_Notes",
+          "children": [
+            {
+              "key": "qjohlc5mtovwgwiqfzdgwea",
+              "title": "Dell Server Fan Tamer",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "Cybersecurity_Notes",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "m7j2ktba2hjk9l6avnxa7bw",
+      "title": "Networking",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "Cybersecurity_Notes",
+      "children": [
+        {
+          "key": "escp81woj2nbxijwc4cngdo",
+          "title": "Subnetting",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Cybersecurity_Notes",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "child2parent": {
+    "t7zelcb6b17opo2gjy4y9cq": null,
+    "ll31x7410bamam5vfds1u2g": "t7zelcb6b17opo2gjy4y9cq",
+    "9mtvb3bi0ewh6uhzashbs0v": "t7zelcb6b17opo2gjy4y9cq",
+    "payc36k9g5adgt5wyinqr8g": "t7zelcb6b17opo2gjy4y9cq",
+    "3o48nuz7byeshb4lhbfpang": "t7zelcb6b17opo2gjy4y9cq",
+    "4it4kktpaqbu2raq4bk5oub": "3o48nuz7byeshb4lhbfpang",
+    "phd6lr0llsyy9qcbykd4b25": "t7zelcb6b17opo2gjy4y9cq",
+    "ecm8gbfd442dpxbe5fggfzo": "t7zelcb6b17opo2gjy4y9cq",
+    "h42642wolzf824la84a6bb7": null,
+    "om8an351xireaxm8fnh4lcl": "h42642wolzf824la84a6bb7",
+    "mybr5q8teq3cgw5295vo8le": "om8an351xireaxm8fnh4lcl",
+    "oiuemyum5qeirf6iyu4piq3": "h42642wolzf824la84a6bb7",
+    "7z8bjqbo56addky8v1sk2rd": "oiuemyum5qeirf6iyu4piq3",
+    "kh3qu6gbkqp3jojuo9qgkzl": "h42642wolzf824la84a6bb7",
+    "qjohlc5mtovwgwiqfzdgwea": "kh3qu6gbkqp3jojuo9qgkzl",
+    "m7j2ktba2hjk9l6avnxa7bw": null,
+    "escp81woj2nbxijwc4cngdo": "m7j2ktba2hjk9l6avnxa7bw"
+  },
+  "notesLabelById": {
+    "t7zelcb6b17opo2gjy4y9cq": "Cheat Sheets:",
+    "ll31x7410bamam5vfds1u2g": "Bug Bounty TOOLBOX",
+    "9mtvb3bi0ewh6uhzashbs0v": "Checklist Linux",
+    "payc36k9g5adgt5wyinqr8g": "Checklist Windows",
+    "3o48nuz7byeshb4lhbfpang": "PEN_cheatsheet",
+    "4it4kktpaqbu2raq4bk5oub": "Nmap",
+    "phd6lr0llsyy9qcbykd4b25": "Pentest opening",
+    "ecm8gbfd442dpxbe5fggfzo": "SQL_Injection",
+    "h42642wolzf824la84a6bb7": "HOT HomeLab Of Things:",
+    "om8an351xireaxm8fnh4lcl": "ANSIBLE",
+    "mybr5q8teq3cgw5295vo8le": "Controlled_Node_Setup",
+    "oiuemyum5qeirf6iyu4piq3": "POWERSHELL",
+    "7z8bjqbo56addky8v1sk2rd": "Useful Commands",
+    "kh3qu6gbkqp3jojuo9qgkzl": "SCRIPTS:",
+    "qjohlc5mtovwgwiqfzdgwea": "Dell Server Fan Tamer",
+    "m7j2ktba2hjk9l6avnxa7bw": "Networking",
+    "escp81woj2nbxijwc4cngdo": "Subnetting"
+  }
+}

