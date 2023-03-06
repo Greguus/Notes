@@ -2,7 +2,7 @@
 id: 3o48nuz7byeshb4lhbfpang
 title: PEN_cheatsheet
 desc: ''
-updated: 1673079137859
+updated: 1678077836336
 created: 1673077678854
 ---
 ## Basic Tools
@@ -42,8 +42,8 @@ created: 1673077678854
 | **Command**   | **Description**   |
 | --------------|-------------------|
 | **Service Scanning** |
-| `nmap 10.129.42.253` | Run nmap on an IP |
-| `nmap -sV -sC -p- 10.129.42.253` | Run an nmap script scan on an IP |
+| `nmap 10.129.42.253` | Run [[Cheat Sheets.PEN_cheatsheet.Nmap]] on an IP |
+| `nmap -sV -sC -p- 10.129.42.253` | Run an [[Cheat Sheets.PEN_cheatsheet.Nmap]] script scan on an IP |
 | `locate scripts/citrix` | List various available nmap scripts |
 | `nmap --script smb-os-discovery.nse -p445 10.10.10.40` | Run an nmap script on an IP |
 | `netcat 10.10.10.10 22` | Grab banner of an open port |
@@ -94,3 +94,4 @@ created: 1673077678854
 | `base64 shell -w 0` | Convert a file to `base64` |
 | `echo f0VMR...SNIO...InmDwU \| base64 -d > shell` | Convert a file from `base64` back to its orig |
 | `md5sum shell` | Check the file's `md5sum` to ensure it converted correctly |
+
