@@ -2,11 +2,13 @@
 id: t7zelcb6b17opo2gjy4y9cq
 title: "Cheat Sheets:"
 desc: ''
-updated: 1678077776509
+updated: 1680237413820
 created: 1673136329365
 ---
 [[PEN_cheatsheet|Cheat Sheets.PEN_cheatsheet]]
 * [[Cheat Sheets.PEN_cheatsheet.Nmap]]
+* [[Cheat Sheets.PEN_cheatsheet.Infrastructure-based Enumeration]]
+* [[Cheat Sheets.PEN_cheatsheet.TOOLBOX]]
 
 [[Pentest Opening|Cheat Sheets.Pentest opening]]     
 [[Checklist Linux|Cheat Sheets.Checklist Linux]]    

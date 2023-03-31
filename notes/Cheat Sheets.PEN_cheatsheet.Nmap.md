@@ -2,7 +2,7 @@
 id: 4it4kktpaqbu2raq4bk5oub
 title: Nmap
 desc: ''
-updated: 1678077611329
+updated: 1680236139348
 created: 1678077599781
 ---
 ## Scanning Options
@@ -18,6 +18,27 @@ created: 1678077599781
 | `--reason` | Displays the reason for a specific result. |
 | `--disable-arp-ping` | Disables ARP Ping Requests. |
 | `--top-ports=<num>` | Scans the specified top ports that have been defined as most frequent.  |
+<br>
+
+| **Effectivenes** | **TCP ports required** | **UDP ports required** |
+|---|---|---|
+|10%|	1	|5|
+|20%|	2	|12|
+|30%|	4	|27|
+|40%|	6	|135|
+|50%|	10	|1,075|
+|60%|	18	|2,618|
+|70%|	44	|5,157|
+|80%|	122	|7,981|
+|85%|	236	|9,623|
+|90%|	576	|11,307|
+|95%|	1,558	|13,035|
+|99%|	3,328	|15,094|
+|100|%	65,536|	65,536|
+<br>
+
+| **Nmap Option** | **Description** |
+|---|---|
 | `-p-` | Scan all ports. |
 | `-p22-110` | Scan all ports between 22 and 110. |
 | `-p22,25` | Scans only the specified ports 22 and 25. |
@@ -35,6 +56,7 @@ created: 1678077599781
 | `-S 10.10.10.200` | Specifies the source IP address for the scan. |
 | `-g` | Specifies the source port for the scan. |
 | `--dns-server <ns>` | DNS resolution is performed by using a specified name server. |
+| `--source-port 53` | Use port 53 (DNS request) to test firewall rules and potentially evade IDS/IPS|
 
 
 

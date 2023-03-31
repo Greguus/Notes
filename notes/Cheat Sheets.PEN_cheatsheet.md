@@ -2,7 +2,7 @@
 id: 3o48nuz7byeshb4lhbfpang
 title: PEN_cheatsheet
 desc: ''
-updated: 1678077836336
+updated: 1678080779184
 created: 1673077678854
 ---
 ## Basic Tools
@@ -46,6 +46,7 @@ created: 1673077678854
 | `nmap -sV -sC -p- 10.129.42.253` | Run an [[Cheat Sheets.PEN_cheatsheet.Nmap]] script scan on an IP |
 | `locate scripts/citrix` | List various available nmap scripts |
 | `nmap --script smb-os-discovery.nse -p445 10.10.10.40` | Run an nmap script on an IP |
+| `xsltproc target.xml -o target.html` | Convert stored results from XML to HTML |
 | `netcat 10.10.10.10 22` | Grab banner of an open port |
 | `smbclient -N -L \\\\10.129.42.253` | List SMB Shares |
 | `smbclient \\\\10.129.42.253\\users` | Connect to an SMB share |
