@@ -2,7 +2,7 @@
 id: hkaksah1ldknzu7xvqrkkkt
 title: Infrastructure-based Enumeration
 desc: ''
-updated: 1680239590657
+updated: 1680332203790
 created: 1680235498810
 ---
 ## Infrastructure-based Enumeration
@@ -38,6 +38,7 @@ created: 1680235498810
 | `smbclient -N -L //<FQDN/IP>` | Null session authentication on SMB. |
 | `smbclient //<FQDN/IP>/<share>` | Connect to a specific SMB share. |
 | `rpcclient -U "" <FQDN/IP>` | Interaction with the target using RPC. |
+| rpcclient $> `querydominfo` | Domain Information Query|
 | `samrdump.py <FQDN/IP>` | Username enumeration using Impacket scripts. |
 | `smbmap -H <FQDN/IP>` | Enumerating SMB shares. |
 | `crackmapexec smb <FQDN/IP> --shares -u '' -p ''` | Enumerating SMB shares using null session authentication. |

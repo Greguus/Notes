@@ -2,7 +2,7 @@
 id: 3o48nuz7byeshb4lhbfpang
 title: PEN_cheatsheet
 desc: ''
-updated: 1680243688437
+updated: 1680495661398
 created: 1673077678854
 ---
 ## Basic Tools
@@ -95,4 +95,6 @@ created: 1673077678854
 | `base64 shell -w 0` | Convert a file to `base64` |
 | `echo f0VMR...SNIO...InmDwU \| base64 -d > shell` | Convert a file from `base64` back to its orig |
 | `md5sum shell` | Check the file's `md5sum` to ensure it converted correctly |
+|**Local port forwarding**|
+|`ssh -L 5432:<localhost>:5432 user@<remotehostIP>`
 
