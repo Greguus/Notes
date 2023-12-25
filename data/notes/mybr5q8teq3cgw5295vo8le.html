@@ -1,0 +1,43 @@
+<h1 id="controlled_node_setup">Controlled_Node_Setup<a aria-hidden="true" class="anchor-heading icon-link" href="#controlled_node_setup"></a></h1>
+<h2 id="controlled-node-setup">Controlled Node Setup<a aria-hidden="true" class="anchor-heading icon-link" href="#controlled-node-setup"></a></h2>
+<p>Temporary draft (work in progress):</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token punctuation">---</span>
+
+<span class="token punctuation">-</span> <span class="token key atrule">hosts</span><span class="token punctuation">:</span> all
+  <span class="token key atrule">tasks</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Add the user 'ansible'
+      <span class="token key atrule">ansible.builtin.user</span><span class="token punctuation">:</span>
+        <span class="token key atrule">name</span><span class="token punctuation">:</span> ansible
+        <span class="token key atrule">comment</span><span class="token punctuation">:</span> ansible
+        <span class="token key atrule">shell</span><span class="token punctuation">:</span> /bin/bash
+        <span class="token key atrule">create_home</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+        <span class="token key atrule">state</span><span class="token punctuation">:</span> present
+    <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Add user 'ansible' to sudoers
+      <span class="token key atrule">lineinfile</span><span class="token punctuation">:</span>
+        <span class="token key atrule">path</span><span class="token punctuation">:</span> /etc/sudoers
+        <span class="token key atrule">regexp</span><span class="token punctuation">:</span> <span class="token string">'^ansible'</span>
+        <span class="token key atrule">line</span><span class="token punctuation">:</span> <span class="token string">'ansible ALL=(ALL) NOPASSWD: ALL'</span>
+        <span class="token key atrule">validate</span><span class="token punctuation">:</span> <span class="token string">'visudo -cf %s'</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Remove 'authorized_keys' with root key
+      <span class="token key atrule">become</span><span class="token punctuation">:</span> yes
+      <span class="token key atrule">ansible.builtin.file</span><span class="token punctuation">:</span>
+        <span class="token key atrule">path</span><span class="token punctuation">:</span> /root/.ssh/authorized_keys
+        <span class="token key atrule">state</span><span class="token punctuation">:</span> absent
+    <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Set ssh key from file
+      <span class="token key atrule">authorized_key</span><span class="token punctuation">:</span>
+        <span class="token key atrule">user</span><span class="token punctuation">:</span> ansible
+        <span class="token key atrule">state</span><span class="token punctuation">:</span> present
+        <span class="token key atrule">key</span><span class="token punctuation">:</span> <span class="token string">"{{ lookup('file', '/home/ansible/.ssh/id_rsa.pub') }}"</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Set "PermitRootLogin" to no
+      <span class="token key atrule">lineinfile</span><span class="token punctuation">:</span>
+        <span class="token key atrule">path</span><span class="token punctuation">:</span> /etc/ssh/sshd_config
+        <span class="token key atrule">regexp</span><span class="token punctuation">:</span> <span class="token string">'^PermitRootLogin'</span>
+        <span class="token key atrule">line</span><span class="token punctuation">:</span> <span class="token string">'PermitRootLogin prohibit-password'</span>
+        <span class="token key atrule">state</span><span class="token punctuation">:</span> present
+
+</code></pre>
+<hr>
+<strong>Backlinks</strong>
+<ul>
+<li><a href="/Notes/notes/om8an351xireaxm8fnh4lcl">ANSIBLE</a></li>
+</ul>

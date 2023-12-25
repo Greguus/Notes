@@ -1,0 +1,110 @@
+<h1 id="checklist-windows">Checklist Windows<a aria-hidden="true" class="anchor-heading icon-link" href="#checklist-windows"></a></h1>
+<h2 id="checklist-windows-1">Checklist Windows<a aria-hidden="true" class="anchor-heading icon-link" href="#checklist-windows-1"></a></h2>
+<h2 id="system-info">System Info<a aria-hidden="true" class="anchor-heading icon-link" href="#system-info"></a></h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled> Obtain System information  </li>
+<li class="task-list-item"><input type="checkbox" disabled> Search for kernel exploits using scripts</li>
+<li class="task-list-item"><input type="checkbox" disabled> Use Google to search for kernel exploits</li>
+<li class="task-list-item"><input type="checkbox" disabled> Use searchsploit to search for kernel exploits</li>
+<li class="task-list-item"><input type="checkbox" disabled> Interesting info in env vars?</li>
+<li class="task-list-item"><input type="checkbox" disabled> Passwords in PowerShell history?</li>
+<li class="task-list-item"><input type="checkbox" disabled> Interesting info in Internet settings?</li>
+<li class="task-list-item"><input type="checkbox" disabled> Drives?</li>
+<li class="task-list-item"><input type="checkbox" disabled> WSUS exploit?</li>
+<li class="task-list-item"><input type="checkbox" disabled> AlwaysInstallElevated?</li>
+</ul>
+<h2 id="loggingav-enumeration">Logging/AV enumeration<a aria-hidden="true" class="anchor-heading icon-link" href="#loggingav-enumeration"></a></h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled> Check Audit and WEF settings</li>
+<li class="task-list-item"><input type="checkbox" disabled> Check LAPS</li>
+<li class="task-list-item"><input type="checkbox" disabled> Check if WDigest is active</li>
+<li class="task-list-item"><input type="checkbox" disabled> LSA Protection?</li>
+<li class="task-list-item"><input type="checkbox" disabled> Credentials Guard?</li>
+<li class="task-list-item"><input type="checkbox" disabled> Cached Credentials?</li>
+<li class="task-list-item"><input type="checkbox" disabled> Check if any AV</li>
+<li class="task-list-item"><input type="checkbox" disabled> AppLocker Policy?</li>
+<li class="task-list-item"><input type="checkbox" disabled> UAC</li>
+<li class="task-list-item"><input type="checkbox" disabled> User Privileges</li>
+<li class="task-list-item"><input type="checkbox" disabled> Check current user privileges</li>
+<li class="task-list-item"><input type="checkbox" disabled> Are you member of any privileged group?</li>
+<li class="task-list-item"><input type="checkbox" disabled> Check if you have any of these tokens enabled: SeImpersonatePrivilege, SeAssignPrimaryPrivilege SeTcbPrivilege, SeBackupPrivilege, SeRestorePrivilege, SeCreateTokenPrivilege, SeLoadDriverPrivilege SeTakeOwnershipPrivilege, SeDebugPrivilege ?</li>
+<li class="task-list-item"><input type="checkbox" disabled> Users Sessions?</li>
+<li class="task-list-item"><input type="checkbox" disabled> Check users homes (access?)</li>
+<li class="task-list-item"><input type="checkbox" disabled> Check Password Policy</li>
+<li class="task-list-item"><input type="checkbox" disabled> What is inside the Clipboard?</li>
+</ul>
+<h2 id="network">Network<a aria-hidden="true" class="anchor-heading icon-link" href="#network"></a></h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled> Check current network information</li>
+<li class="task-list-item"><input type="checkbox" disabled> Check hidden local services restricted to the outside</li>
+<li class="task-list-item"><input type="checkbox" disabled> Enumerate the network (shares, interfaces, routes, neighbours, ...)</li>
+<li class="task-list-item"><input type="checkbox" disabled> Take a special look at network services listening on localhost (127.0.0.1)</li>
+</ul>
+<h2 id="running-processes">Running Processes<a aria-hidden="true" class="anchor-heading icon-link" href="#running-processes"></a></h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled> Processes binaries file and folders permissions</li>
+<li class="task-list-item"><input type="checkbox" disabled> Memory Password mining</li>
+<li class="task-list-item"><input type="checkbox" disabled> Insecure GUI apps</li>
+</ul>
+<h2 id="services">Services<a aria-hidden="true" class="anchor-heading icon-link" href="#services"></a></h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled> Can you modify any service?</li>
+<li class="task-list-item"><input type="checkbox" disabled> Can you modify the binary that is executed by any service?</li>
+<li class="task-list-item"><input type="checkbox" disabled> Can you modify the registry of any service?</li>
+<li class="task-list-item"><input type="checkbox" disabled> Can you take advantage of any unquoted service binary path?</li>
+</ul>
+<h2 id="applications">Applications<a aria-hidden="true" class="anchor-heading icon-link" href="#applications"></a></h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled> Write permissions on installed applications</li>
+<li class="task-list-item"><input type="checkbox" disabled> Startup Applications</li>
+<li class="task-list-item"><input type="checkbox" disabled> Vulnerable Drivers</li>
+</ul>
+<h2 id="dll-hijacking">DLL Hijacking<a aria-hidden="true" class="anchor-heading icon-link" href="#dll-hijacking"></a></h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled> Can you write in any folder inside PATH?</li>
+<li class="task-list-item"><input type="checkbox" disabled> Is there any known service binary that tries to load any non-existant DLL?</li>
+<li class="task-list-item"><input type="checkbox" disabled> Can you write in any binaries folder?</li>
+</ul>
+<h2 id="windows-credentials">Windows Credentials<a aria-hidden="true" class="anchor-heading icon-link" href="#windows-credentials"></a></h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled> Winlogon credentials</li>
+<li class="task-list-item"><input type="checkbox" disabled> Windows Vault credentials that you could use?</li>
+<li class="task-list-item"><input type="checkbox" disabled> Interesting DPAPI credentials?</li>
+<li class="task-list-item"><input type="checkbox" disabled> Passwords of saved Wifi networks?</li>
+<li class="task-list-item"><input type="checkbox" disabled> Interesting info in saved RDP Connections?</li>
+<li class="task-list-item"><input type="checkbox" disabled> Passwords in recently run commands?</li>
+<li class="task-list-item"><input type="checkbox" disabled> Remote Desktop Credentials Manager passwords?</li>
+<li class="task-list-item"><input type="checkbox" disabled> AppCmd.exe exists? Credentials?</li>
+<li class="task-list-item"><input type="checkbox" disabled> SCClient.exe? DLL Side Loading?</li>
+</ul>
+<h2 id="files-and-registry-credentials">Files and Registry (Credentials)<a aria-hidden="true" class="anchor-heading icon-link" href="#files-and-registry-credentials"></a></h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled> Putty: Creds and SSH host keys</li>
+<li class="task-list-item"><input type="checkbox" disabled> SSH keys in registry?</li>
+<li class="task-list-item"><input type="checkbox" disabled> Passwords in unattended files?</li>
+<li class="task-list-item"><input type="checkbox" disabled> Any SAM &#x26; SYSTEM backup?</li>
+<li class="task-list-item"><input type="checkbox" disabled> Cloud credentials?</li>
+<li class="task-list-item"><input type="checkbox" disabled> McAfee SiteList.xml file?</li>
+<li class="task-list-item"><input type="checkbox" disabled> Cached GPP Password?</li>
+<li class="task-list-item"><input type="checkbox" disabled> Password in IIS Web config file?</li>
+<li class="task-list-item"><input type="checkbox" disabled> Interesting info in web logs?</li>
+<li class="task-list-item"><input type="checkbox" disabled> Do you want to ask for credentials to the user?</li>
+<li class="task-list-item"><input type="checkbox" disabled> Interesting files inside the Recycle Bin?</li>
+<li class="task-list-item"><input type="checkbox" disabled> Other registry containing credentials?</li>
+<li class="task-list-item"><input type="checkbox" disabled> Inside Browser data (dbs, history, bookmarks, ...)?</li>
+<li class="task-list-item"><input type="checkbox" disabled> Generic password search in files and registry</li>
+<li class="task-list-item"><input type="checkbox" disabled> Tools to automatically search for passwords</li>
+</ul>
+<h2 id="leaked-handlers">Leaked Handlers<a aria-hidden="true" class="anchor-heading icon-link" href="#leaked-handlers"></a></h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled> Have you access to any handler of a process run by administrator?</li>
+</ul>
+<h2 id="pipe-client-impersonation">Pipe Client Impersonation<a aria-hidden="true" class="anchor-heading icon-link" href="#pipe-client-impersonation"></a></h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled> Check if you can abuse it</li>
+</ul>
+<hr>
+<strong>Backlinks</strong>
+<ul>
+<li><a href="/Notes/notes/t7zelcb6b17opo2gjy4y9cq">Cheat Sheets:</a></li>
+</ul>

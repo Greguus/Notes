@@ -1,0 +1,288 @@
+{
+  "roots": [
+    {
+      "key": "irggoj29glx2y8z3yum2w64",
+      "title": "AZURE",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "Cybersecurity_Notes",
+      "children": [
+        {
+          "key": "p0zoudixw9tjg5crfbm5s7x",
+          "title": "Powershell",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Cybersecurity_Notes",
+          "children": []
+        }
+      ]
+    },
+    {
+      "key": "t7zelcb6b17opo2gjy4y9cq",
+      "title": "Cheat Sheets:",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "Cybersecurity_Notes",
+      "children": [
+        {
+          "key": "ll31x7410bamam5vfds1u2g",
+          "title": "Bug Bounty TOOLBOX",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Cybersecurity_Notes",
+          "children": []
+        },
+        {
+          "key": "9mtvb3bi0ewh6uhzashbs0v",
+          "title": "Checklist Linux",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Cybersecurity_Notes",
+          "children": []
+        },
+        {
+          "key": "payc36k9g5adgt5wyinqr8g",
+          "title": "Checklist Windows",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Cybersecurity_Notes",
+          "children": []
+        },
+        {
+          "key": "3o48nuz7byeshb4lhbfpang",
+          "title": "PEN_cheatsheet",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Cybersecurity_Notes",
+          "children": [
+            {
+              "key": "hkaksah1ldknzu7xvqrkkkt",
+              "title": "Infrastructure-based Enumeration",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "Cybersecurity_Notes",
+              "children": []
+            },
+            {
+              "key": "4it4kktpaqbu2raq4bk5oub",
+              "title": "Nmap",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "Cybersecurity_Notes",
+              "children": []
+            },
+            {
+              "key": "kv3ad81dyojtgr1w4nfq9ig",
+              "title": "TOOLBOX",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "Cybersecurity_Notes",
+              "children": []
+            }
+          ]
+        },
+        {
+          "key": "phd6lr0llsyy9qcbykd4b25",
+          "title": "Pentest opening",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Cybersecurity_Notes",
+          "children": []
+        },
+        {
+          "key": "uh4ab4gfb7c6bt3kowua6qg",
+          "title": "PostgreSQL",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Cybersecurity_Notes",
+          "children": []
+        },
+        {
+          "key": "ecm8gbfd442dpxbe5fggfzo",
+          "title": "SQL_Injection",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Cybersecurity_Notes",
+          "children": []
+        }
+      ]
+    },
+    {
+      "key": "h42642wolzf824la84a6bb7",
+      "title": "HOT HomeLab Of Things:",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "Cybersecurity_Notes",
+      "children": [
+        {
+          "key": "om8an351xireaxm8fnh4lcl",
+          "title": "ANSIBLE",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Cybersecurity_Notes",
+          "children": [
+            {
+              "key": "mybr5q8teq3cgw5295vo8le",
+              "title": "Controlled_Node_Setup",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "Cybersecurity_Notes",
+              "children": []
+            }
+          ]
+        },
+        {
+          "key": "7yd24jacp1pv9noy8hsifgh",
+          "title": "Linux",
+          "icon": "plusOutlined",
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Cybersecurity_Notes",
+          "children": [
+            {
+              "key": "p9tx14kkyv01x39xsiwgwvq",
+              "title": "List of daily tools",
+              "icon": "plusOutlined",
+              "hasTitleNumberOutlined": false,
+              "vaultName": "Cybersecurity_Notes",
+              "children": [
+                {
+                  "key": "z2a3tp1utt1j5rdca4wsncg",
+                  "title": "List of daily tools",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "Cybersecurity_Notes",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "key": "yitdmby2j0q68xp6o7tilw6",
+              "title": "Useful Commands",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "Cybersecurity_Notes",
+              "children": []
+            }
+          ]
+        },
+        {
+          "key": "oiuemyum5qeirf6iyu4piq3",
+          "title": "POWERSHELL",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Cybersecurity_Notes",
+          "children": [
+            {
+              "key": "7z8bjqbo56addky8v1sk2rd",
+              "title": "Useful Commands",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "Cybersecurity_Notes",
+              "children": []
+            }
+          ]
+        },
+        {
+          "key": "kh3qu6gbkqp3jojuo9qgkzl",
+          "title": "SCRIPTS:",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Cybersecurity_Notes",
+          "children": [
+            {
+              "key": "qjohlc5mtovwgwiqfzdgwea",
+              "title": "Dell Server Fan Tamer",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "Cybersecurity_Notes",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "m7j2ktba2hjk9l6avnxa7bw",
+      "title": "Networking",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "Cybersecurity_Notes",
+      "children": [
+        {
+          "key": "yostmjh4ssz7qyuzqtzd0ea",
+          "title": "SSH_Tunnels",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Cybersecurity_Notes",
+          "children": []
+        },
+        {
+          "key": "escp81woj2nbxijwc4cngdo",
+          "title": "Subnetting",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Cybersecurity_Notes",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "child2parent": {
+    "irggoj29glx2y8z3yum2w64": null,
+    "p0zoudixw9tjg5crfbm5s7x": "irggoj29glx2y8z3yum2w64",
+    "t7zelcb6b17opo2gjy4y9cq": null,
+    "ll31x7410bamam5vfds1u2g": "t7zelcb6b17opo2gjy4y9cq",
+    "9mtvb3bi0ewh6uhzashbs0v": "t7zelcb6b17opo2gjy4y9cq",
+    "payc36k9g5adgt5wyinqr8g": "t7zelcb6b17opo2gjy4y9cq",
+    "3o48nuz7byeshb4lhbfpang": "t7zelcb6b17opo2gjy4y9cq",
+    "hkaksah1ldknzu7xvqrkkkt": "3o48nuz7byeshb4lhbfpang",
+    "4it4kktpaqbu2raq4bk5oub": "3o48nuz7byeshb4lhbfpang",
+    "kv3ad81dyojtgr1w4nfq9ig": "3o48nuz7byeshb4lhbfpang",
+    "phd6lr0llsyy9qcbykd4b25": "t7zelcb6b17opo2gjy4y9cq",
+    "uh4ab4gfb7c6bt3kowua6qg": "t7zelcb6b17opo2gjy4y9cq",
+    "ecm8gbfd442dpxbe5fggfzo": "t7zelcb6b17opo2gjy4y9cq",
+    "h42642wolzf824la84a6bb7": null,
+    "om8an351xireaxm8fnh4lcl": "h42642wolzf824la84a6bb7",
+    "mybr5q8teq3cgw5295vo8le": "om8an351xireaxm8fnh4lcl",
+    "7yd24jacp1pv9noy8hsifgh": "h42642wolzf824la84a6bb7",
+    "p9tx14kkyv01x39xsiwgwvq": "7yd24jacp1pv9noy8hsifgh",
+    "z2a3tp1utt1j5rdca4wsncg": "p9tx14kkyv01x39xsiwgwvq",
+    "yitdmby2j0q68xp6o7tilw6": "7yd24jacp1pv9noy8hsifgh",
+    "oiuemyum5qeirf6iyu4piq3": "h42642wolzf824la84a6bb7",
+    "7z8bjqbo56addky8v1sk2rd": "oiuemyum5qeirf6iyu4piq3",
+    "kh3qu6gbkqp3jojuo9qgkzl": "h42642wolzf824la84a6bb7",
+    "qjohlc5mtovwgwiqfzdgwea": "kh3qu6gbkqp3jojuo9qgkzl",
+    "m7j2ktba2hjk9l6avnxa7bw": null,
+    "yostmjh4ssz7qyuzqtzd0ea": "m7j2ktba2hjk9l6avnxa7bw",
+    "escp81woj2nbxijwc4cngdo": "m7j2ktba2hjk9l6avnxa7bw"
+  },
+  "notesLabelById": {
+    "irggoj29glx2y8z3yum2w64": "AZURE",
+    "p0zoudixw9tjg5crfbm5s7x": "Powershell",
+    "t7zelcb6b17opo2gjy4y9cq": "Cheat Sheets:",
+    "ll31x7410bamam5vfds1u2g": "Bug Bounty TOOLBOX",
+    "9mtvb3bi0ewh6uhzashbs0v": "Checklist Linux",
+    "payc36k9g5adgt5wyinqr8g": "Checklist Windows",
+    "3o48nuz7byeshb4lhbfpang": "PEN_cheatsheet",
+    "hkaksah1ldknzu7xvqrkkkt": "Infrastructure-based Enumeration",
+    "4it4kktpaqbu2raq4bk5oub": "Nmap",
+    "kv3ad81dyojtgr1w4nfq9ig": "TOOLBOX",
+    "phd6lr0llsyy9qcbykd4b25": "Pentest opening",
+    "uh4ab4gfb7c6bt3kowua6qg": "PostgreSQL",
+    "ecm8gbfd442dpxbe5fggfzo": "SQL_Injection",
+    "h42642wolzf824la84a6bb7": "HOT HomeLab Of Things:",
+    "om8an351xireaxm8fnh4lcl": "ANSIBLE",
+    "mybr5q8teq3cgw5295vo8le": "Controlled_Node_Setup",
+    "7yd24jacp1pv9noy8hsifgh": "Linux",
+    "p9tx14kkyv01x39xsiwgwvq": "List of daily tools",
+    "z2a3tp1utt1j5rdca4wsncg": "List of daily tools",
+    "yitdmby2j0q68xp6o7tilw6": "Useful Commands",
+    "oiuemyum5qeirf6iyu4piq3": "POWERSHELL",
+    "7z8bjqbo56addky8v1sk2rd": "Useful Commands",
+    "kh3qu6gbkqp3jojuo9qgkzl": "SCRIPTS:",
+    "qjohlc5mtovwgwiqfzdgwea": "Dell Server Fan Tamer",
+    "m7j2ktba2hjk9l6avnxa7bw": "Networking",
+    "yostmjh4ssz7qyuzqtzd0ea": "SSH_Tunnels",
+    "escp81woj2nbxijwc4cngdo": "Subnetting"
+  }
+}

